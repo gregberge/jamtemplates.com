@@ -1,0 +1,860 @@
+{
+  "anoun-gatsby-starter-material-business-markdown-master": {
+    "file": "gatsby-starter-material-business-markdown.md",
+    "repoUrl": "https://github.com/ANOUN/gatsby-starter-material-business-markdown",
+    "repoName": "ANOUN/gatsby-starter-material-business-markdown",
+    "branch": "master",
+    "themeKey": "anoun-gatsby-starter-material-business-markdown-master",
+    "title": "Gatsby Material Business",
+    "demo": "https://gatsby-starter-material-business-markdown.netlify.com/",
+    "author": "ANOUN",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Simple and elegant blog template for Gatsby.",
+    "theme_key": "anoun-gatsby-starter-material-business-markdown-master",
+    "name": "gatsby-starter-material-business-markdown",
+    "github_username": "jaydanurwin",
+    "repo": "jaydanurwin/gatsby-starter-material-business-markdown",
+    "url": "https://github.com/jaydanurwin/gatsby-starter-material-business-markdown",
+    "stars": 6,
+    "forks": 4,
+    "open_issues": 0,
+    "last_commit": "2019-10-29T14:09:26Z",
+    "created_at": "2019-05-02T16:21:45Z",
+    "readmeContent": "[![Netlify Status](https://api.netlify.com/api/v1/badges/ad7e589d-7716-4190-981f-3258aaa42d8c/deploy-status)](https://app.netlify.com/sites/gatsby-starter-material-business-markdown/deploys)\n\n<p align=\"center\">\n  <a href=\"https://gatsby-starter-material-business-markdown.netlify.com\" target=\"_blank\">\n    <img alt=\"ANOUN\" src=\"./content/assets/gatsby-starter-material-business-markdown.netlify.com.png\" />\n  </a>\n</p>\n\n# Gatsby Starter by ANOUN | Material Business - Markdown\n\n## Features\n\n* [MDC React Components](https://github.com/material-components/material-components-web-react)\n* [MDC Theming](https://material.io/develop/web/docs/theming/)\n* Modern Design\n* Home Page\n* About Page\n* Contact Page\n  * [Formspark](https://formspark.io/) contact form\n* Blog\n  * Featured images for blog posts\n  * Markdown post format\n* SEO\n  * Open Graph Tags\n  * Dynamic Titles and Descriptions\n  * Sitemap.xml\n* Prettier code formatting\n* CSS Fluid Typography\n* PWA Support\n* Google Analytics Support\n\n## Performance Test\n\n[View Lighthouse Test Results](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://gatsby-starter-material-business-markdown.netlify.com/)\n\n## Deploy to Netlify\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ANOUN/gatsby-starter-material-business-markdown)\n\n## Customization\n\n### Website Data\n\nEdit `config/website.js`\n\n```\nmodule.exports = {\n  // SEO\n  title: \"Gatsby Starter #1 | ANOUN | Markdown\", // Navigation and Site Title\n  titleTemplate: \"%s · Gatsby Starter #1\", // Template for Page Titles\n  description: \"This is Gatsby Starter #1 by ANOUN with content sourcing from Markdown files. Don't be shy, clone it on Github if you'd like!\",\n  siteUrl: \"https://gatsby-starter-anoun-1-markdown.netlify.com\", // Domain of your site. No trailing slash!\n  image: \"/images/anoun-share-image.png\", // Used for SEO Share Image\n\n  // Manifest\n  icon: \"src/favicon.png\", // Used for manifest favicon generation\n  short_name: \"ANOUN\", // shortname for manifest. MUST be shorter than 12 characters\n  owner: \"ANOUN\", // Author\n  theme_color: \"#663399\",\n  background_color: \"#ffffff\",\n\n  // Social and Analytics\n  twitterUsername: \"@anouncompany\", // Twitter Username\n  googleAnalyticsID: \"\", // Google Analytics Tag ID\n}\n```\n\n### Theme\n\nEdit `src/styles/theme.scss`\n\n```\n:root {\n    --mdc-theme-primary: #663399;\n    --mdc-theme-on-primary: #ffffff;\n    --mdc-theme-secondary: #000000;\n    --mdc-theme-on-secondary: #ffffff;\n    --mdc-theme-surface: #fefefe;\n    --mdc-theme-background: #ffffff;\n    --mdc-theme-on-background: #000000;\n}\n```\n\n### Typography\n\nEdit `config/typography.js`\n\n```\nimport Typography from \"typography\"\n\nconst typography = new Typography({\n  title: \"Gatsby Starter Material Business\",\n  baseFontSize: \"18px\",\n  baseLineHeight: 1.666,\n  headerFontFamily: [\n    \"Lora\",\n    \"-apple-system\",\n    \"BlinkMacSystemFont\",\n    \"Segoe UI\",\n    \"Roboto\",\n    \"Helvetica\",\n    \"Arial\",\n    \"sans-serif\",\n    \"Apple Color Emoji\",\n    \"Segoe UI Emoji\",\n    \"Segoe UI Symbol\",\n  ],\n  bodyFontFamily: [\n    \"Lato\",\n    \"-apple-system\",\n    \"BlinkMacSystemFont\",\n    \"Segoe UI\",\n    \"Roboto\",\n    \"Helvetica\",\n    \"Arial\",\n    \"sans-serif\",\n    \"Apple Color Emoji\",\n    \"Segoe UI Emoji\",\n    \"Segoe UI Symbol\",\n  ],\n  scaleRatio: 3.157,\n  headerWeight: 400,\n  overrideStyles: () => ({\n    img: {\n      marginBottom: 0,\n    },\n  }),\n})\n\nexport default typography\n```\n\n### About Page\n\nEdit `content/pages/about.md`\n\n```\n# About\n\nWelcome to the Material Business Starter by <span class=\"anoun-title\">[ANOUN](https://anoun.company)</span>! This is the first in our series of Gatsby Starters inspired by Google's [Material Design](https://material.io). The Material Business starter features all the basics for a typical business' website such as a home page, about page, contact page with an email form, and a fully featured blog. This one is sourced from Markdown but we'll have others that use a headless CMS (stay tuned). So don't be shy, feel free to clone the [Github Repo](https://github.com/ANOUN/gatsby-starter-material-business-markdown) and get started!\n\n...\n\n```\n\n### Contact Form\n\nCreate a form at [Formspark.io](https://formspark.io)\n\nReplace \"YOUR-FORM-ID\" with your formspark form's ID in `src/components/ContactForm/ContactForm.js`\n\n```\n...\n\n  handleSubmit = event => {\n    event.preventDefault()\n    fetch('https://submit-form.com/YOUR-FORM-ID', {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json',\n        Accept: 'application/json'\n      },\n      body: JSON.stringify(this.state)\n    })\n      .then(this.handleSuccess)\n      .catch(function(error) {\n        console.error(error)\n      })\n  }\n...\n```\n\n## Credits\n\nDesigned by [ANOUN](https://anoun.company)\n\nMade in Idaho\n\n"
+  },
+  "anubhavsrivastava-gatsby-starter-grayscale-master": {
+    "file": "gatsby-starter-grayscale.md",
+    "repoUrl": "https://github.com/anubhavsrivastava/gatsby-starter-grayscale",
+    "repoName": "anubhavsrivastava/gatsby-starter-grayscale",
+    "branch": "master",
+    "themeKey": "anubhavsrivastava-gatsby-starter-grayscale-master",
+    "title": "Gatsby Grayscale",
+    "demo": "https://anubhavsrivastava.github.io/gatsby-starter-grayscale/",
+    "author": "Anubhav Srivastava",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Grayscale is a multipurpose, one page website theme featuring a dark layout along with smooth scrolling page animations.",
+    "theme_key": "anubhavsrivastava-gatsby-starter-grayscale-master",
+    "name": "gatsby-starter-grayscale",
+    "github_username": "anubhavsrivastava",
+    "repo": "anubhavsrivastava/gatsby-starter-grayscale",
+    "url": "https://github.com/anubhavsrivastava/gatsby-starter-grayscale",
+    "stars": 5,
+    "forks": 1,
+    "open_issues": 0,
+    "last_commit": "2019-11-21T10:22:29Z",
+    "created_at": "2019-06-24T05:52:10Z",
+    "readmeContent": "# gatsby-starter-grayscale\n\nGatsby.js V2 starter template based on Grayscale by startbootstrap\n\nFor an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).\n\nCheck online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-grayscale/)\n\n## Screenshot\n\n![Screenshot](./src/assets/img/demo.png)\n\n## Install\n\nMake sure that you have the Gatsby CLI program installed:\n\n```sh\nnpm install --global gatsby-cli\n```\n\nAnd run from your CLI:\n\n```sh\ngatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-grayscale\n```\n\nThen you can run it by:\n\n```sh\ncd gatsby-example-site\nnpm install\ngatsby develop\n```\n\n### Personalization\n\nEdit `config.js` to put up your details\n\n```javascript\nmodule.exports = {\n  siteTitle: 'Gatsby Starter grayscale', // <title>\n  ...\n  heading: 'Anubhav Srivastava',\n  subHeading: 'Full time Web Developer. Part time Open source contributor  ',\n\n  // social\n  socialLinks: [\n    {\n      icon: 'fa-github',\n      name: 'Github',\n      url: 'https://github.com/anubhavsrivastava',\n    }\n    ...\n  ],\n};\n\n```\n\n### Deploying using Github page\n\n`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.\n\nAdditionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.\n\n### Contribution\n\nSuggestions and PRs are welcome!\n\nPlease create issue or open PR request for contribution.\n\n### License\n\n[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)\n\nrefer `LICENSE` file in this repository.\n"
+  },
+  "anubhavsrivastava-gatsby-starter-prologue-master": {
+    "file": "gatsby-starter-prologue.md",
+    "repoUrl": "https://github.com/anubhavsrivastava/gatsby-starter-prologue",
+    "repoName": "anubhavsrivastava/gatsby-starter-prologue",
+    "branch": "master",
+    "themeKey": "anubhavsrivastava-gatsby-starter-prologue-master",
+    "title": "Gatsby Prologue",
+    "demo": "https://anubhavsrivastava.github.io/gatsby-starter-prologue/",
+    "author": "Anubhav Srivastava",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Elegant single page portfolio for Gatsby.",
+    "theme_key": "anubhavsrivastava-gatsby-starter-prologue-master",
+    "name": "gatsby-starter-prologue",
+    "github_username": "anubhavsrivastava",
+    "repo": "anubhavsrivastava/gatsby-starter-prologue",
+    "url": "https://github.com/anubhavsrivastava/gatsby-starter-prologue",
+    "stars": 11,
+    "forks": 3,
+    "open_issues": 1,
+    "last_commit": "2020-01-09T15:44:35Z",
+    "created_at": "2019-05-18T11:51:19Z",
+    "readmeContent": "# gatsby-starter-prologue\n\nGatsby.js V2 starter template based on Prologue by HTML5 UP\n\nFor an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).\n\n![Screenshot](./src/assets/img/prologue.jpg)\n\nCheck online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-prologue/)\n\n## Screenshot\n\n![Screenshot](./src/assets/img/demo.png)\n\n## Install\n\nMake sure that you have the Gatsby CLI program installed:\n\n```sh\nnpm install --global gatsby-cli\n```\n\nAnd run from your CLI:\n\n```sh\ngatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-prologue\n```\n\nThen you can run it by:\n\n```sh\ncd gatsby-example-site\nnpm install\ngatsby develop\n```\n\n### Personalization\n\nEdit `config.js` to put up your details\n\n```javascript\nmodule.exports = {\n  siteTitle: 'Gatsby Starter Prologue', // <title>\n  ...\n  authorName: 'Anubhav Srivastava',\n  heading: 'Web Developer',\n  // social\n  socialLinks: [\n    {\n      icon: 'fa-github',\n      name: 'Github',\n      url: 'https://github.com/anubhavsrivastava',\n    }\n    ...\n  ],\n};\n\n```\n\n### Deploying using Github page\n\n`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.\n\nAdditionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.\n\n### Contribution\n\nSuggestions and PRs are welcome!\n\nPlease create issue or open PR request for contribution.\n\n### License\n\n[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)\n\nrefer `LICENSE` file in this repository.\n"
+  },
+  "anubhavsrivastava-gatsby-starter-spectral-master": {
+    "file": "gatsby-starter-spectral.md",
+    "repoUrl": "https://github.com/anubhavsrivastava/gatsby-starter-spectral",
+    "repoName": "anubhavsrivastava/gatsby-starter-spectral",
+    "branch": "master",
+    "themeKey": "anubhavsrivastava-gatsby-starter-spectral-master",
+    "title": "Gatsby Spectral",
+    "demo": "https://anubhavsrivastava.github.io/gatsby-starter-spectral/",
+    "author": "Anubhav Srivastava",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Beautiful and elegant animated Gatsby template for business.",
+    "theme_key": "anubhavsrivastava-gatsby-starter-spectral-master",
+    "name": "gatsby-starter-spectral",
+    "github_username": "anubhavsrivastava",
+    "repo": "anubhavsrivastava/gatsby-starter-spectral",
+    "url": "https://github.com/anubhavsrivastava/gatsby-starter-spectral",
+    "stars": 12,
+    "forks": 7,
+    "open_issues": 1,
+    "last_commit": "2019-12-05T00:02:13Z",
+    "created_at": "2019-06-08T08:30:22Z",
+    "readmeContent": "# gatsby-starter-spectral\n\nGatsby.js V2 starter template based on Spectral by HTML5 UP\n\nFor an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).\n\n![Screenshot](./src/assets/img/screenshot.jpg)\n\nCheck online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-spectral/)\n\n## Screenshot\n\n![Screenshot](./src/assets/img/demo.png)\n\n## Install\n\nMake sure that you have the Gatsby CLI program installed:\n\n```sh\nnpm install --global gatsby-cli\n```\n\nAnd run from your CLI:\n\n```sh\ngatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-spectral\n```\n\nThen you can run it by:\n\n```sh\ncd gatsby-example-site\nnpm install\ngatsby develop\n```\n\n### Personalization\n\nEdit `config.js` to put up your details\n\n```javascript\nmodule.exports = {\n  siteTitle: 'Gatsby Starter spectral', // <title>\n  ...\n  heading: 'Anubhav',\n  subHeading: 'Web Developer',\n  // social\n  socialLinks: [\n    {\n      icon: 'fa-github',\n      name: 'Github',\n      url: 'https://github.com/anubhavsrivastava',\n    }\n    ...\n  ],\n};\n\n```\n\n### Deploying using Github page\n\n`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.\n\nAdditionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.\n\n### Contribution\n\nSuggestions and PRs are welcome!\n\nPlease create issue or open PR request for contribution.\n\n### License\n\n[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)\n\nrefer `LICENSE` file in this repository.\n"
+  },
+  "baobabkoodaa-gatsby-starter-photo-book-master": {
+    "file": "gatsby-starter-photo-book.md",
+    "repoUrl": "https://github.com/baobabKoodaa/gatsby-starter-photo-book",
+    "repoName": "baobabKoodaa/gatsby-starter-photo-book",
+    "branch": "master",
+    "themeKey": "baobabkoodaa-gatsby-starter-photo-book-master",
+    "title": "Gatsby Photo Book",
+    "demo": "https://gatsby-starter-photo-book.netlify.com/",
+    "author": "Atte Juvonen",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Gatsby template to share photo sets with your friends.",
+    "theme_key": "baobabkoodaa-gatsby-starter-photo-book-master",
+    "name": "gatsby-starter-photo-book",
+    "github_username": "baobabKoodaa",
+    "repo": "baobabKoodaa/gatsby-starter-photo-book",
+    "url": "https://github.com/baobabKoodaa/gatsby-starter-photo-book",
+    "stars": 13,
+    "forks": 9,
+    "open_issues": 0,
+    "last_commit": "2020-01-04T01:52:51Z",
+    "created_at": "2019-07-05T01:16:03Z",
+    "readmeContent": "<h1 align=\"center\">\n  :camera: Gatsby Starter Photo Book :camera:\n</h1>\n\n»»» [Live demo](https://gatsby-starter-photo-book.netlify.com) «««\n\n## :notebook: Key features\n\n- **Gallery**: auto-generated thumbnails are presented on **CSS Grid** with **infinite scroll**.\n- Beautiful **\"postcard\" view** for photos with **fullscreen toggle**.\n- Both views are **responsive** with **minimal whitespace** and **polished UX**.\n- Many **performance optimizations** for image delivery (both by Gatsby & way beyond what Gatsby can do).\n\n## :zap: Get started\n\n1. Fork and `npm install`.\n2. Drop your photos in `content/images`.\n3. Run in dev mode with `gatsby develop`.  \n...and you're all set! (Ok you probably want to edit some text, colors, favicon, etc. - but almost done!)\n\n## :gem: UX\n\n- Friendly to users who have disabled JS. All important features are either designed to work entirely without JS or have **non JS fallback**. For example, infinite scroll **gracefully degrades** into pagination.\n- When the user clicks on an image from the gallery, we immediately render a **prefetched page** with a **tracedSVG placeholder** stylized into the site's theme, and **fade-over transition** into the actual photo once it has been downloaded.\n- When the user navigates between photos in postcard view, we either:\n    - Snap to the next photo if it has been downloaded\n    - Or snap to placeholder and transition into the photo when it's downloaded.\n- **No flicker** when the user navigates between photos (this was actually _very_ difficult to implement without sacrificing pre-rendered pages that work without JS and without sacrificing placeholder images).\n- When the user clicks 'x' to return from postcard view to gallery, **scroll position** is set to the thumbnail of the last photo they viewed and a visual indicator is given to help the user adjust their sight to the next unseen photo. This is better than simply remembering scroll position, because a user can browse several photos in postcard view before returning to gallery (in that case we want to scroll to the last thumbnail, not the first). This feature degrades gracefully if the user navigates with the browser's back button instead of clicking 'x' (in that case, we just remember the scroll position).\n- The postcard view is **slightly different on small vs large screens**:\n    - Large screens: the photo is decorated like a postcard in the center of the screen with buttons usually outside the photo.\n    - Small screens: maximum screen real estate for photos. Reduced decoration. Buttons can overlay on the photo, but the most obtrusive buttons (prev/next) are hidden. When the user first navigates to an image, they are flashed a visual cue to indicate that they can navigate to prev/next by clicking anywhere. The cue is flashed again if the user returns to the site later, but it is not flashed again during the same session.\n- You can tell a story with your images, because the gallery has **row-based order** (many other photo website implementations use column-based order, e.g. masonry CSS, which looks great, but causes the order of images to feel random to users who are used to scanning photos horizontally.)\n\n## :cyclone: Performance\n\nThere's some standard optimizations by Gatsby, like generating different sized versions of images and allowing the **browser to choose how large of an image it needs** for your device. There's also a couple interesting custom optimizations that deliver a huge boost in performance. One is related to image prefetching (in postcard view) and the other is related to page prefetching (in gallery view).\n\n---\n\nIn postcard view, once the current image has loaded, the browser sends requests for the next 2 images and one previous image in anticipation that you may want to navigate to previous or next images. **The trick** that I use to preload images optimally: add transparent images on top of the current image so that the browser can choose the proper sized image from the srcSet. These images are added to the DOM only _after_ the current image has loaded, so we don't steal bandwidth from it.\n\nNote that this is superior to standard `<link rel=\"prefetch\">` for 3 reasons, in order of importance:\n\n1. You can't leverage srcSets with regular prefetching (the browser couldn't possibly know which sized image to download).\n2. Some browsers (like Chrome at this time) will start prefetching before the current image has fully loaded. In my experiments this ~doubled the time to deliver the current image.\n3. Browsers can choose to ignore prefetch tags at their discretion.\n\n---\n\nYou may notice there are two kinds of paths to photos: `/images/58` and `/images/fromGallery?id=58`. That's ugly, I know. Let me explain.\n\n1. The first version of this starter used query parameters only (the `?id=58` URLs). These pages wouldn't work without JavaScript, so that's unacceptable.\n2. In order to support non JS users we moved onto generated pages with URLs like `/images/58`. This meant that each link from the gallery had to be prefetched separately (instead of prefetching a single `/images/fromGallery` page). Sometimes when a lot of thumbnails were loading on mobile, there would be a few seconds delay between clicking a thumbnail and rendering a page, so that's unacceptable.\n3. The obvious solution was to use both kinds of paths: query parameters for gallery links and generated pages for everything else. (And, obviously, gallery links have to point to different paths between JS and non JS users.) But now we have 2 different URL paths visible to the end user, that's not acceptable.\n4. What if we do a quick SPA navigation from query parameter URL to generated page? This works, but it hurts performance. The browser starts downloading photos (both the current image and the preload images), then it stops downloading photos, and then it starts downloading photos again. That's not acceptable.\n5. What if we wait until the current image has loaded, and _then_ navigate from query parameter URL to generated page? This worked really nicely and didn't hurt performance and mostly hid the alternative URL from end users... but there's an edge case where a user opens an image from gallery, and then immediately navigates to prev/next. In that case they will get directed _back_ to the previous page when the image from previous page loads. That's definitely not acceptable, so back to number 3, and here we are.\n\n---\n\nIn addition, gallery's infinite scroll:\n- Loads more items _before_ you scroll all the way down to look at loading spinners or blur-ups.\n- Fetches metadata ~20 items at a time (as opposed to fetching _all_ metadata at initial page load, like many other implementations do).\n- The first ~20 items are delivered with the initial page without waiting for metadata fetches.\n\n## :sparkles: Tips\n\n- Thumbnails are generated automatically, with cropping. Set the aspect ratio in `gatsby-node.js` to whichever aspect ratio is most common in your photoset. If many of your photos need cropping (=are not the desired aspect ratio), you will probably want to tweak your crops. You can change the crop mode (NORTH, CENTER and ATTENTION work the best). You can also manually pre-crop some photos: make a copy of your photo, crop it approximately to the desired aspect ratio, and the Photo Book will then create the thumbnail by cropping your pre-cropped photo. Why crop 2 times? To save your time and nerves (making approximate crops by hand is faster than making exact crops). You need to use this naming convention: if your original photo is `cat.jpg`, name the pre-cropped photo `cat_crophelper.jpg`.\n\n## :beetle: Known issues\n\n- Chrome on Android sometimes shows the address bar, sometimes doesn't (depends on whether the user last scrolled upwards or downwards in gallery). When the address bar is hidden, extra space appears in the bottom that the photo doesn't utilize. This happens because the photo and all its parents have `100%` height. An alternative is to use `100vh` height, but that's worse, because then the bottom part of photos is 'cut off' when the address bar is visible (unless the user realizes they need to scroll down). If the user enters the postcard view without address bar, they can scroll up to make the address bar visible. If the address bar is fully visible, the user can not scroll down to hide the address bar. I was unable to resolve the issue properly so as a workaround I added a full screen toggle for small screens. It works nicely.\n- Sometimes cornerCaseHandler tries to initiate fetches to pages that don't exist. I've had difficulty reproducing this, but I've seen it twice. There's no harm from doing these fetches so I've just supressed the errors from them for now.\n- Updating Gatsby-related dependencies causes placeholder SVGs to misalign. It is somehow related to a change in how Gatsby generates SVGs (after updating, they no longer contain a viewBox attribute, and they scale incorrectly).\n\n## 🎓 Attribution\n\nHi, I'm Atte and I created this because I wanted to share our wedding photos on a fast & beautiful user-friendly website. This is a fork of my other project [Gatsby Starter Infinite Scroll](https://github.com/baobabKoodaa/gatsby-starter-infinite-scroll), which is more of a general purpose starter whereas this one is specialized for sharing photosets. \n\n- My wife Marianne was integral in the design.\n- Images are from [Unsplash](https://unsplash.com).\n- Icons are from [FontAwesome](https://www.fontawesome.com).\n- Infinite scroll uses some code from Jared Palmer's [react-simple-infinite-scroll](https://github.com/jaredpalmer/react-simple-infinite-scroll).\n- Gallery CSS Grid is modified from work by [LekoArts](https://www.lekoarts.de/).\n"
+  },
+  "codebushi-gatsby-starter-dimension-master": {
+    "file": "gatsby-starter-dimension.md",
+    "repoUrl": "https://github.com/codebushi/gatsby-starter-dimension",
+    "repoName": "codebushi/gatsby-starter-dimension",
+    "branch": "master",
+    "themeKey": "codebushi-gatsby-starter-dimension-master",
+    "title": "Gatsby Dimension",
+    "demo": "https://gatsby-dimension.surge.sh/",
+    "author": "Code Bushi",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "CC BY 3.0",
+    "description": "Beautiful single page Gatsby template for personal website.",
+    "theme_key": "codebushi-gatsby-starter-dimension-master",
+    "name": "gatsby-starter-dimension",
+    "github_username": "codebushi",
+    "repo": "codebushi/gatsby-starter-dimension",
+    "url": "https://github.com/codebushi/gatsby-starter-dimension",
+    "stars": 202,
+    "forks": 136,
+    "open_issues": 5,
+    "last_commit": "2020-01-11T21:33:26Z",
+    "created_at": "2017-11-25T18:56:41Z",
+    "readmeContent": "# gatsby-starter-dimension\n\n**This is a starter for Gatsby.js V2.**\n\n**The older V1 version of this starter can be found on the v1 branch:**\n\nGatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.\n\n## Preview\n\nhttps://gatsby-dimension.surge.sh/\n\n## Installation\n\nInstall this starter (assuming Gatsby is installed) by running from your CLI:\n<br/>\n`gatsby new gatsby-starter-dimension https://github.com/codebushi/gatsby-starter-dimension`\n\nRun `gatsby develop` in the terminal to start the dev site.\n"
+  },
+  "codebushi-gatsby-starter-forty-master": {
+    "file": "gatsby-starter-forty.md",
+    "repoUrl": "https://github.com/codebushi/gatsby-starter-forty",
+    "repoName": "codebushi/gatsby-starter-forty",
+    "branch": "master",
+    "themeKey": "codebushi-gatsby-starter-forty-master",
+    "title": "Gatsby Forty",
+    "demo": "https://gatsby-forty.surge.sh/",
+    "author": "Code Bushi",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "CC BY 3.0",
+    "description": "Gatsby full page landing page template with beautiful pastel colors.",
+    "theme_key": "codebushi-gatsby-starter-forty-master",
+    "name": "gatsby-starter-forty",
+    "github_username": "codebushi",
+    "repo": "codebushi/gatsby-starter-forty",
+    "url": "https://github.com/codebushi/gatsby-starter-forty",
+    "stars": 162,
+    "forks": 75,
+    "open_issues": 0,
+    "last_commit": "2020-01-06T14:39:19Z",
+    "created_at": "2017-12-02T23:10:35Z",
+    "readmeContent": "# gatsby-starter-forty\n\n**This is a starter for Gatsby.js V2.**\n\n**The older V1 version of this starter can be found on the v1 branch**\n\nGatsby.js V2 starter based on the Forty site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.\n\n## Preview\n\nhttps://gatsby-forty.surge.sh\n\n## Installation\n\nInstall this starter (assuming Gatsby is installed) by running from your CLI:\n<br/>\n`gatsby new gatsby-starter-forty https://github.com/codebushi/gatsby-starter-forty`\n\nRun `gatsby develop` in the terminal to start the dev site.\n\n## CSS Grid\n\nThe grid on this site was replaced with a custom version, built using CSS Grid. It's a very simple 12 column grid that is disabled on mobile. To start using the grid, wrap the desired items with `grid-wrapper`. Items inside the `grid-wrapper` use the class `col-` followed by a number, which should add up to 12.\n\nHere is an example of using the grid, for a 3 column layout:\n\n```\n<div className=\"grid-wrapper\">\n    <div className=\"col-4\">\n        <p>Content Here</p>\n    </div>\n    <div className=\"col-4\">\n        <p>Content Here</p>\n    </div>\n    <div className=\"col-4\">\n        <p>Content Here</p>\n    </div>\n</div>\n```\n"
+  },
+  "codebushi-gatsby-starter-strata-master": {
+    "file": "gatsby-starter-strata.md",
+    "repoUrl": "https://github.com/codebushi/gatsby-starter-strata",
+    "repoName": "codebushi/gatsby-starter-strata",
+    "branch": "master",
+    "themeKey": "codebushi-gatsby-starter-strata-master",
+    "title": "Gatsby Strata",
+    "demo": "https://gatsby-strata.surge.sh/",
+    "author": "Code Bushi",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "CC BY 3.0",
+    "description": "Single page portfolio template for photographers.",
+    "theme_key": "codebushi-gatsby-starter-strata-master",
+    "name": "gatsby-starter-strata",
+    "github_username": "codebushi",
+    "repo": "codebushi/gatsby-starter-strata",
+    "url": "https://github.com/codebushi/gatsby-starter-strata",
+    "stars": 98,
+    "forks": 34,
+    "open_issues": 1,
+    "last_commit": "2019-12-22T18:04:23Z",
+    "created_at": "2018-01-09T23:53:31Z",
+    "readmeContent": "# gatsby-starter-strata\n\n**This is a starter for Gatsby.js V2.**\n\n**The older V1 version of this starter can be found on the v1 branch**\n\nGatsby starter based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata). Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.\n\n## Preview\n\nhttp://gatsby-strata.surge.sh/\n\n## Installation\n\nInstall this starter (assuming Gatsby is installed) by running from your CLI:\n`gatsby new gatsby-starter-strata https://github.com/ChangoMan/gatsby-starter-strata`\n\nRun `gatsby develop` in the terminal to start.\n"
+  },
+  "datocms-gatsby-portfolio-master": {
+    "file": "gatsby-portfolio.md",
+    "repoUrl": "https://github.com/datocms/gatsby-portfolio",
+    "repoName": "datocms/gatsby-portfolio",
+    "branch": "master",
+    "themeKey": "datocms-gatsby-portfolio-master",
+    "title": "Gatsby Dato Portfolio",
+    "demo": "https://cranky-edison-12166d.netlify.com",
+    "author": "DatoCMS",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "DatoCMS"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Clean and simple portoflio template built compatible with Gatsby and Dato CMS.",
+    "theme_key": "datocms-gatsby-portfolio-master",
+    "name": "gatsby-portfolio",
+    "github_username": "datocms",
+    "repo": "datocms/gatsby-portfolio",
+    "url": "https://github.com/datocms/gatsby-portfolio",
+    "stars": 68,
+    "forks": 25,
+    "open_issues": 1,
+    "last_commit": "2020-01-02T16:55:31Z",
+    "created_at": "2017-12-01T17:08:02Z",
+    "readmeContent": "# Gatsby Portfolio Website\n\nThis repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [DatoCMS](https://www.datocms.com).\n\n![Preview](preview.png)\n\n[See the live demo](https://datocms-gatsby-demo.netlify.com/)\n\nIf you want to use try this out yourself, you first need to set up a project on DatoCMS which will host your data.\n\nYou can [sign up for a free account](https://dashboard.datocms.com/signup) and then you can simply click this button:\n\n[![Deploy with DatoCMS](https://dashboard.datocms.com/deploy/button.svg)](https://dashboard.datocms.com/projects/new-from-template/static-website/gatsby-portfolio)\n\n## Repo usage\n\nFirst, install the dependencies of this project:\n\n```\nyarn install\n```\n\nAdd an `.env` file containing the read-only API token of your DatoCMS site:\n\n```\necho 'DATO_API_TOKEN=abc123' >> .env\n```\n\nThen, to run this website in development mode (with live-reload):\n\n```\nyarn develop\n```\n\nTo build the final, production ready static website:\n\n```\nyarn build\n```\n\nThe final result will be saved in the `public` directory.\n\n## About\n\nThe goal of this project is to show how easily you can create static sites using the content (text, images, links, etc.) stored on [DatoCMS](https://www.datocms.com). This project is configured to fetch data from a specific administrative area using [the API DatoCMS provides](https://www.datocms.com/docs/content-management-api).\n\nYou can find further information about how to integrate DatoCMS with Gatsby in [our documentation](https://www.datocms.com/docs/static-generators/gatsbyjs).\n\nThis websites uses:\n\n- [Yarn](https://yarnpkg.com/) as package manager;\n- [GatsbyJS](https://github.com/gatsbyjs/gatsby) as website generator;\n- [gatsby-source-datocms](https://github.com/datocms/gatsby-source-datocms) to integrate the website with DatoCMS.\n"
+  },
+  "gatsbycentral-gatsby-starter-wordpress-master": {
+    "file": "gatsby-starter-wordpress.md",
+    "repoUrl": "https://github.com/GatsbyCentral/gatsby-starter-wordpress",
+    "repoName": "GatsbyCentral/gatsby-starter-wordpress",
+    "branch": "master",
+    "themeKey": "gatsbycentral-gatsby-starter-wordpress-master",
+    "title": "Gatsby Wordpress",
+    "demo": "https://gatsby-starter-wordpress.netlify.com/",
+    "author": "Gatsby Central",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "Wordpress"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "A Gatsby template that leverages the WordPress API, ACF and more.",
+    "theme_key": "gatsbycentral-gatsby-starter-wordpress-master",
+    "name": "gatsby-starter-wordpress",
+    "github_username": "GatsbyCentral",
+    "repo": "GatsbyCentral/gatsby-starter-wordpress",
+    "url": "https://github.com/GatsbyCentral/gatsby-starter-wordpress",
+    "stars": 315,
+    "forks": 90,
+    "open_issues": 11,
+    "last_commit": "2020-01-12T19:22:16Z",
+    "created_at": "2018-02-03T21:55:52Z",
+    "readmeContent": "# Gatsby v2 WordPress Starter\n\nThis starter is forked from the\n[gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)\nand modified to use WordPress instead of netlify-cms, using the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin as the data connector.\n\nDemo: https://gatsby-starter-wordpress.netlify.com/\n\n## Use It Now\n\n    gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress\n\n* Edit `gatsby-config.js`, change `baseUrl`\n  - Make sure you have at least 1 post and 1 page on your WordPress site\n  - Make sure at least 1 post has at least 1 tag\n* Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress\n* Rejoice\n  - For more information on the source plugin, check out the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page\n  - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)\n\n### Known Limitations\n\n* This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.\n* Your WordPress site must have at least 1 post with 1 tag, or the starter will crash\n* Nested pages / categories will not render with nested pages\n  - A WordPress page like `/about/team/` will render on Gatsby as `/team/`\n  - Likewise for categories\n  - Discussion here https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/24\n\n## CSS Processing\n\nThis plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgecss this is reduced 90%.\n\n## WordPress Setup\n\nCheck the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin for more information. If you want to copy the demo content, you can grab the [WordPress XML export here](https://wpdemo.gatsbycentral.com/gatsbystarterwordpress.WordPress.2019-09-12.xml) and import it into your WordPress site as a starting point.\n\n## Contributors\n\nThis starter was forked from the netlify starter by the\n[GatsbyCentral](https://www.gatsbycentral.com/) crew. Additional contributions\nwere gratefully received from the following folks:\n\n* https://github.com/tomByrer\n* https://github.com/dajocarter\n"
+  },
+  "gatsbycentral-gatsby-v2-starter-lumen-master": {
+    "file": "gatsby-v2-starter-lumen.md",
+    "repoUrl": "https://github.com/GatsbyCentral/gatsby-v2-starter-lumen",
+    "repoName": "GatsbyCentral/gatsby-v2-starter-lumen",
+    "branch": "master",
+    "themeKey": "gatsbycentral-gatsby-v2-starter-lumen-master",
+    "title": "Gatsby Lumen",
+    "demo": "https://lumen-v2.netlify.com/",
+    "author": "Gatsby Central",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs.",
+    "theme_key": "gatsbycentral-gatsby-v2-starter-lumen-master",
+    "name": "gatsby-v2-starter-lumen",
+    "github_username": "GatsbyCentral",
+    "repo": "GatsbyCentral/gatsby-v2-starter-lumen",
+    "url": "https://github.com/GatsbyCentral/gatsby-v2-starter-lumen",
+    "stars": 80,
+    "forks": 30,
+    "open_issues": 2,
+    "last_commit": "2020-01-09T06:15:54Z",
+    "created_at": "2018-03-30T12:45:33Z",
+    "readmeContent": "[![GitHub release](https://img.shields.io/github/release/GatsbyCentral/gatsby-v2-starter-lumen.svg)](https://github.com/GatsbyCentral/gatsby-v2-starter-lumen) [![Code Climate](https://img.shields.io/codeclimate/maintainability/GatsbyCentral/gatsby-v2-starter-lumen.svg)](https://codeclimate.com/github/GatsbyCentral/gatsby-v2-starter-lumen) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/GatsbyCentral/gatsby-v2-starter-lumen/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/GatsbyCentral/gatsby-v2-starter-lumen.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https://github.com/GatsbyCentral/gatsby-v2-starter-lumen)\n\n# Lumen\n\nLumen is a minimal, lightweight and mobile-first starter for creating blogs uses\n[Gatsby](https://github.com/gatsbyjs/gatsby).\n\nThis is a fork of\n[gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)\nupdated for Gatsby v2 by the team at\n[GatsbyCentral](https://www.gatsbycentral.com/).\n\n## Features\n+ Lost Grid ([peterramsing/lost](https://github.com/peterramsing/lost)).\n+ Beautiful typography inspired by [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg).\n+ [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.\n+ Stylesheet built using SASS and [BEM](http://getbem.com/naming/)-Style naming.\n+ Syntax highlighting in code blocks.\n+ Sidebar menu built using a configuration block.\n+ Archive organized by tags and categories.\n+ Automatic RSS generation.\n+ Automatic Sitemap generation.\n+ Offline support.\n+ Google Analytics support.\n+ Disqus Comments support.\n\n## Folder Structure\n\n```\n└── src\n    ├── assets\n    │   ├── fonts\n    │   │   └── fontello-771c82e0\n    │   │       ├── css\n    │   │       └── font\n    │   └── scss\n    │       ├── base\n    │       ├── mixins\n    │       └── pages\n    ├── components\n    │   ├── CategoryTemplateDetails\n    │   ├── Disqus\n    │   ├── Links\n    │   ├── Menu\n    │   ├── PageTemplateDetails\n    │   ├── Post\n    │   ├── PostTemplateDetails\n    │   ├── Sidebar\n    │   └── TagTemplateDetails\n    ├── layouts\n    ├── pages\n    │   ├── articles\n    │   │   ├── 2016-01-09---Perfecting-the-Art-of-Perfection\n    │   │   ├── 2016-01-12---The-Origins-of-Social-Stationery-Lettering\n    │   │   ├── 2016-02-02---A-Brief-History-of-Typography\n    │   │   ├── 2017-18-08---The-Birth-of-Movable-Type\n    │   │   └── 2017-19-08---Humane-Typography-in-the-Digital-Age\n    │   └── pages\n    │       ├── 2015-05-01---about\n    │       └── 2015-05-01---contact\n    └── templates\n```\n\n## Getting Started\nInstall this starter (assuming Gatsby is installed) by running from your CLI:\n`gatsby new lumen https://github.com/GatsbyCentral/gatsby-v2-starter-lumen`\n\n#### Running in Development\n`gatsby develop`\n\n#### Building\n`gatsby build`\n\n#### Deploy with Netlify\n\nNetlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. Use the button below to build and deploy your own copy of the repository:\n\n<a href=\"https://app.netlify.com/start/deploy?repository=https://github.com/GatsbyCentral/gatsby-v2-starter-lumen\" target=\"_blank\"><img src=\"https://www.netlify.com/img/deploy/button.svg\" alt=\"Deploy to Netlify\"></a>\n\nAfter clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.\n\n## Screenshot\n\n![](http://i.imgur.com/422y5GV.png)\n\n## Ports\n[Statinamic port](https://github.com/thangngoc89/statinamic-theme-lumen) by [Khoa Nguyen](https://github.com/thangngoc89)\n\n## Contributors\n* https://github.com/alxshelepenok\n* https://github.com/abisz\n* https://github.com/mariolopjr\n* https://github.com/ihororlovskyi\n* https://github.com/marcelabomfim\n* https://github.com/vinnymac\n* https://github.com/axelclark\n* https://github.com/ybbarng\n* https://github.com/marktani\n* https://github.com/concreted\n* https://github.com/charandas\n* https://github.com/zollillo\n* https://github.com/codejet\n* https://github.com/reed-jones\n* https://github.com/swapnilmishra\n* https://github.com/vvasiloud\n* https://github.com/wichopy\n* https://github.com/chmac\n* https://github.com/YoruNoHikage\n* https://github.com/MartinRosenberg\n"
+  },
+  "gillkyle-gatsby-starter-landing-page-master": {
+    "file": "gatsby-starter-landing-page.md",
+    "repoUrl": "https://github.com/gillkyle/gatsby-starter-landing-page",
+    "repoName": "gillkyle/gatsby-starter-landing-page",
+    "branch": "master",
+    "themeKey": "gillkyle-gatsby-starter-landing-page-master",
+    "title": "Gatsby Landing Page",
+    "demo": "https://gatsby-starter-landing-page.netlify.com/",
+    "author": "Kyle Gill",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "A simple, minimal Gatsby template for quick and easy landing pages.",
+    "theme_key": "gillkyle-gatsby-starter-landing-page-master",
+    "name": "gatsby-starter-landing-page",
+    "github_username": "gillkyle",
+    "repo": "gillkyle/gatsby-starter-landing-page",
+    "url": "https://github.com/gillkyle/gatsby-starter-landing-page",
+    "stars": 45,
+    "forks": 10,
+    "open_issues": 0,
+    "last_commit": "2020-01-11T20:11:14Z",
+    "created_at": "2019-03-19T18:05:37Z",
+    "readmeContent": "<p align=\"center\">\n  <img alt=\"preview of page\" src=\"https://github.com/gillkyle/images/blob/master/Screen%20Shot%202019-03-21%20at%209.14.46%20PM.png\" />\n</p>\n<h1 align=\"center\">\n  Gatsby Landing Page Starter\n</h1>\n\nA simple, minimal, easy-to-use landing page starter without all sorts of bells and whistles bolted on that you'll just have to strip out later. Create a super fast, beautiful landing page from a barebones template with a single page that already looks good.\n\n## Prerequisites\n\nIf you do not have the Gatsby CLI installed yet, do it first.\n\n```bash\nnpm install --global gatsby-cli\n```\n\nThe Gatsby CLI uses Node and npm which you will also need installed. More information can be found on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one/).\n\n## 🚀 Getting Started\n\nInstall the starter using the Gatsby new command.\n\n```bash\ngatsby new landing-page https://github.com/gillkyle/gatsby-starter-landing-page.git\n```\n\nNavigate into the project directory and launch the site.\n\n```bash\ncd landing-page && gatsby develop\n```\n\nThe site will be opened up in your default browser on http://localhost:8000\n\nEdit code in the `/src`, save your changes, and they'll reload instantly in the browser.\n\n## 🧐 What's inside?\n\nThe minimal landing page starter comes with a few plugins installed already, but it's main focus is on staying simple and looking clean. These things are included by default:\n\n- 🖼 Gatsby Image: images added to the `src/images` folder are automatically optimized by the `gatsby-image` plugin and can be pulled into components with lazy loading and blur up effects\n- 📊 Analytics: add your Google Analytics tracking id to `gatsby-config.js` to automatically begin tracking visitors to the site\n- 🗺 Sitemap: any new pages added to the site are automically assembled together into a sitemap through `gatsby-plugin-sitemap`\n- 🎨 Color Theme: the `src/styles/constants.js` file contains a set of colors and default styles that are applied inline to components on the site that can be overriden with your own styles\n\n## 🧪 Experiment\n\nIf you want to try playing with the source code in an online playground you can open the repo in Codesandox with this button.\n\n[![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gillkyle/gatsby-starter-landing-page/tree/master/)\n\n## 💫 Deploy\n\nIf you just want to see a site online real fast you can deploy a copy of the site to Netlify with this button.\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gillkyle/gatsby-starter-landing-page)\n\nTo create an optimized build of the site run this command\n\n```bash\ngatsby build\n```\n\nA `/public` folder will be assembled that can be deployed to a service like Netlify, Surge, GitHub Pages, AWS S3, Firebase hosting, or your own file server.\n"
+  },
+  "histaff-website-static-master": {
+    "file": "gatsby-website-static.md",
+    "repoUrl": "https://github.com/histaff/website-static",
+    "repoName": "histaff/website-static",
+    "branch": "master",
+    "themeKey": "histaff-website-static-master",
+    "title": "Gatsby HiStaff",
+    "demo": "https://histaff.io/",
+    "author": "HiStaff",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Business ready landing page template for Gatsby.",
+    "theme_key": "histaff-website-static-master",
+    "name": "website-static",
+    "github_username": "histaff",
+    "repo": "histaff/website-static",
+    "url": "https://github.com/histaff/website-static",
+    "stars": 30,
+    "forks": 12,
+    "open_issues": 0,
+    "last_commit": "2020-01-01T09:58:37Z",
+    "created_at": "2019-06-04T16:34:12Z",
+    "readmeContent": "<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->\n<p align=\"center\">\n  <a href=\"https://www.gatsbyjs.org\">\n    <img alt=\"Gatsby\" src=\"https://raw.githubusercontent.com/histaff/website-static/development/static/images/histaff.png\" width=\"60\" />\n  </a>\n</p>\n<h1 align=\"center\">\n  HiStaff Static Website\n</h1>\n\nIt's a starter static website which useful plugins based on [Gatsby](https://www.gatsbyjs.org/) .\n\n## 🚀 Quick start\n\n1. **Install the Gatsby CLI.**\n\n   ```shell\n   npm install -g gatsby-cli\n   ```\n\n2. **Create a Gatsby site from HiStaff.**\n\n   ```sh\n   gatsby new histaff https://github.com/histaff/website-static/\n   ```\n\n3. **Start the site in `develop` mode.**\n\n   Next, move into your new site’s directory and start it up:\n\n   ```sh\n   cd histaff/\n   gatsby develop\n   ```\n\n4. **Open the source code and start editing!**\n\n   Your site is now running at `http://localhost:8000`. Open the `histaff` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes, and the browser will update in real time!\n\nAt this point, you’ve got a fully functional Gatsby website. For additional information on how you can customize your Gatsby site, see our [plugins](https://gatsbyjs.org/plugins/) and [the official tutorial](https://gatsbyjs.org/tutorial/).\n\n## 🧐 Features\n* Support SCSS\n* Web font loader (Google and custom font)\n* Sample pages for starter\n* Clean code and structure"
+  },
+  "imedadel-gatsby-london-master": {
+    "file": "gatsby-london.md",
+    "repoUrl": "https://github.com/ImedAdel/gatsby-london",
+    "repoName": "ImedAdel/gatsby-london",
+    "branch": "master",
+    "themeKey": "imedadel-gatsby-london-master",
+    "title": "Gatsby London",
+    "demo": "https://gatsby-london.netlify.com/",
+    "author": "Imed Adel",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Full-page image-centric template for Gatsby.",
+    "theme_key": "imedadel-gatsby-london-master",
+    "name": "gatsby-london",
+    "github_username": "ImedAdel",
+    "repo": "ImedAdel/gatsby-london",
+    "url": "https://github.com/ImedAdel/gatsby-london",
+    "stars": 69,
+    "forks": 33,
+    "open_issues": 4,
+    "last_commit": "2020-01-14T06:40:29Z",
+    "created_at": "2019-05-18T14:17:26Z",
+    "readmeContent": "<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->\n<p align=\"center\">\n  <a href=\"https://gatsby-london.netlify.com\">\n    <img alt=\"Gatsby\" src=\"./content/assets/screenshot-desktop.jpg\" />\n  </a>\n</p>\n\n<h1 align=\"center\">\n  London by <a href=\"https://jamstack.studio\">Jamstack Studio</a>\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)\n\n</h1>\n\n---\n\nA custom, image-centric theme for Gatsby. Made for publishers and portfolios with plenty of graphics to show off to the world. Completely free and fully responsive, released under the MIT license.\n\n**Based on [London](https://github.com/TryGhost/London) for Ghost**\n\n**Demo: https://gatsby-london.netlify.com**\n\n---\n<p align=\"center\">\n  <a href=\"https://jamstack.studio\">\n    <img alt=\"Jamstack Studio\" src=\"https://raw.githubusercontent.com/ImedAdel/media/master/jamstack.studio_(Laptop%20with%20HiDPI%20screen).png\" />\n  </a>\n</p>\n\n---\n\n_I haven't really spent any time adding the JS animations or removing any unused CSS (automatically done by PurgeCSS). You will also need HTML in your Markdown file in order to add CSS classes to your images_\n\n---\n\n_First time with Gatsby? Take a look on the [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._\n\n## 🚀 Quick start\n\n1.  **Create a Gatsby site.**\n\n    Use `npx` and the Gatsby CLI to create a new project\n\n    ```sh\n    # create a new Gatsby site using the blog starter\n    npx gatsby new my-awesome-portfolio https://github.com/ImedAdel/gatsby-london\n    ```\n\n1.  **Start developing.**\n\n    Navigate into your new site’s directory and start it up.\n\n    ```sh\n    cd my-awesome-portfolio/\n    gatsby develop\n    ```\n\n1.  **Open the source code and start editing!**\n\n    Your site is now running at `http://localhost:8000`!\n\n    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._\n\n    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!\n\n<!-- AUTO-GENERATED-CONTENT:END -->\n"
+  },
+  "jugglerx-gatsby-serif-theme-master": {
+    "file": "gatsby-serif-theme.md",
+    "repoUrl": "https://github.com/JugglerX/gatsby-serif-theme",
+    "repoName": "JugglerX/gatsby-serif-theme",
+    "branch": "master",
+    "themeKey": "jugglerx-gatsby-serif-theme-master",
+    "title": "Gatsby Serif",
+    "demo": "https://gatsby-serif.netlify.com/",
+    "author": "Robert Austin",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Serif is a beautiful small business theme for Gatsby.",
+    "theme_key": "jugglerx-gatsby-serif-theme-master",
+    "name": "gatsby-serif-theme",
+    "github_username": "JugglerX",
+    "repo": "JugglerX/gatsby-serif-theme",
+    "url": "https://github.com/JugglerX/gatsby-serif-theme",
+    "stars": 90,
+    "forks": 37,
+    "open_issues": 2,
+    "last_commit": "2020-01-12T16:53:01Z",
+    "created_at": "2018-12-12T04:58:52Z",
+    "readmeContent": "# Gatsby Serif Theme\n\nSerif is a beautiful small business theme for Gatsby. It contains content types for the archetypical small business website. The theme is fully responsive, blazing fast and artfully illustrated.\n\n[Live Demo](https://gatsby-serif-theme.netlify.com/)\n\n![Gatsby Serif Theme screenshot](https://github.com/JugglerX/gatsby-serif-theme/blob/master/screenshots/screenshot-with-border.png)\n\n## Theme features\n\n- Multi-page theme (not just a blog) that uses Markdown for multiple content-types/templates. It uses `gatsby-transformer-remark` and has several examples of querying and filtering `allMarkdownRemark`\n- Includes a graphql query in `gatsby-node.js` that creates pages and templates by content type based on the folder `src/pages/services`, `src/pages/team`,\n- Services (Markdown)\n- Team (Markdown)\n- Testimonials (Markdown)\n- Features (Data)\n- SCSS using `gatsby-plugin-sass`\n- Responsive design\n- Bootstrap 4 grid and media queries only\n- Responsive menu\n- Robust example content included\n- Royalty free illustrations included\n- SEO Titles & Meta using `gatsby-plugin-react-helmet`\n- ESLint (google config)\n- Prettier code styling\n\n## Deployment\n\n```\nnpm install\n```\n\n```\ngatsby develop\n```\n"
+  },
+  "lekoarts-gatsby-starter-portfolio-cara-master": {
+    "file": "gatsby-cara.md",
+    "repoUrl": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "repoName": "LekoArts/gatsby-starter-portfolio-cara",
+    "branch": "master",
+    "themeKey": "lekoarts-gatsby-starter-portfolio-cara-master",
+    "title": "Gatsby Cara",
+    "demo": "https://cara.lekoarts.de/",
+    "author": "LekoArts",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Especially designers and/or photographers will love this theme! Built with MDX and Theme UI.",
+    "theme_key": "lekoarts-gatsby-starter-portfolio-cara-master",
+    "name": "gatsby-starter-portfolio-cara",
+    "github_username": "LekoArts",
+    "repo": "LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "stars": 751,
+    "forks": 170,
+    "open_issues": 0,
+    "last_commit": "2020-01-14T00:30:59Z",
+    "created_at": "2018-06-02T19:41:22Z",
+    "readmeContent": "<p align=\"center\">\n  <a href=\"https://cara.lekoarts.de\">\n    <img alt=\"LekoArts\" src=\"https://img.lekoarts.de/gatsby/gatsby-site-illustration.png\" />\n  </a>\n</p>\n<h1 align=\"center\">\n  Gatsby Starter Portfolio: Cara\n</h1>\n\n<p align=\"center\">\n  <a href=\"https://github.com/LekoArts/gatsby-starter-portfolio-cara/blob/master/LICENSE\">\n    <img src=\"https://img.shields.io/badge/license-MIT-blue.svg\" alt=\"Gatsby Starter Portfolio: Cara is released under the MIT license.\" />\n  </a>\n  <img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs welcome!\" />\n  <a href=\"https://twitter.com/intent/follow?screen_name=lekoarts_de\">\n    <img src=\"https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de\" alt=\"Follow @lekoarts_de\" />\n  </a>\n  <a href=\"https://app.netlify.com/sites/portfolio-cara/deploys\">\n      <img src=\"https://api.netlify.com/api/v1/badges/88bbaef1-6f83-4894-8acd-e6512ff39265/deploy-status\" alt=\"Netlify Status\" />\n    </a>\n</p>\n\nPlayful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).\n\n[**Demo Website**](https://cara.lekoarts.de)\n\nAlso be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)\n\n## ✨ Features\n\n- Theme UI-based theming\n- react-spring parallax effect\n- CSS Animations on Shapes\n\n## 🚀 Getting Started\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-cara/tree/master/)\n\n1. **Create a Gatsby site.**\n\nUse the Gatsby CLI to create a new site, specifying this project\n\n```sh\ngatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara\n```\n\n2. **Start developing.**\n\nNavigate into your new site's directory and start it up.\n\n```sh\ncd project-name\ngatsby develop\n```\n\n3. **Open the code and start customizing!**\n\nYour site is now running at `http://localhost:8000`!\n\nIf you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can checkout this [shorter](https://www.gatsbyjs.org/docs/themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.org/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.\n\n## 📝 Using and modifying this starter\n\n**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the underlying theme!\n\nThis starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).\n\nHave a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.\n\n### Changing content\n\nThe content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overriden the `intro.mdx` file as an example. Place the other files in the same `src/@lekoarts/gatsby-theme-cara/sections/` folder.\n\nYou have to use the `<ProjectCard />` component inside `projects.mdx` to display the cards. Example:\n\n```md\n## Projects\n\n<ProjectCard title=\"Freiheit\" link=\"https://www.behance.net/gallery/58937147/Freiheit\" bg=\"linear-gradient(to right, #D4145A 0%, #FBB03B 100%)\">\nThis project is my entry to Adobe's #ChallengeYourPerspective contest.\n</ProjectCard>\n```\n\n### Change your `static` folder\n\nThe `static` folder contains the icons, social media images and robots.txt. Don't forget to change these files, too!\n\n## 🤔 Questions or problems?\n\nPlease open up an issue on the main repository: [LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes). Thanks!\n\n## 🎓 Learning Gatsby\n\nLooking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.org/).\n\n### Themes\n\n- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).\n\n### General\n\n- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.\n\n- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.\n\n## 🌟 Supporting me\n\nThanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.\n\nPlease star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts)!\n\nIf you want to hire me for **contract/freelance work**, you can do so! [Get in touch with me!](https://www.lekoarts.de/en/contact)\n"
+  },
+  "lekoarts-gatsby-starter-portfolio-emilia-master": {
+    "file": "gatsby-theme-emilia.md",
+    "repoUrl": "https://github.com/LekoArts/gatsby-starter-portfolio-emilia",
+    "repoName": "LekoArts/gatsby-starter-portfolio-emilia",
+    "branch": "master",
+    "themeKey": "lekoarts-gatsby-starter-portfolio-emilia-master",
+    "title": "Gatsby Emilia",
+    "demo": "https://emilia.lekoarts.de",
+    "author": "LekoArts",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.",
+    "theme_key": "lekoarts-gatsby-starter-portfolio-emilia-master",
+    "name": "gatsby-starter-portfolio-emilia",
+    "github_username": "LekoArts",
+    "repo": "LekoArts/gatsby-starter-portfolio-emilia",
+    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-emilia",
+    "stars": 219,
+    "forks": 46,
+    "open_issues": 1,
+    "last_commit": "2020-01-10T07:51:37Z",
+    "created_at": "2017-11-30T18:53:29Z",
+    "readmeContent": "<p align=\"center\">\r\n  <a href=\"https://emilia.lekoarts.de\">\r\n    <img alt=\"LekoArts\" src=\"https://img.lekoarts.de/gatsby/gatsby-site-illustration.png\" />\r\n  </a>\r\n</p>\r\n<h1 align=\"center\">\r\n  Gatsby Starter Portfolio: Emilia\r\n</h1>\r\n\r\n<p align=\"center\">\r\n  <a href=\"https://github.com/LekoArts/gatsby-starter-portfolio-emilia/blob/master/LICENSE\">\r\n    <img src=\"https://img.shields.io/badge/license-MIT-blue.svg\" alt=\"Gatsby Starter Portfolio: Emilia is released under the MIT license.\" />\r\n  </a>\r\n  <img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs welcome!\" />\r\n  <a href=\"https://twitter.com/intent/follow?screen_name=lekoarts_de\">\r\n    <img src=\"https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de\" alt=\"Follow @lekoarts_de\" />\r\n  </a>\r\n  <a href=\"https://app.netlify.com/sites/portfolio-emilia/deploys\">\r\n    <img src=\"https://api.netlify.com/api/v1/badges/5da7d9e1-9b91-44c5-b23d-b47cab98c50d/deploy-status\" alt=\"Netlify Status\" />\r\n  </a>\r\n</p>\r\n\r\nMinimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Using the Gatsby Theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia).\r\n\r\n[**Demo Website**](https://emilia.lekoarts.de)\r\n\r\nAlso be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)\r\n\r\n## ✨ Features\r\n\r\n- MDX\r\n- Fully customizable through the usage of Gatsby Themes (and Theme UI)\r\n- Light Mode / Dark Mode\r\n- Page Transitions\r\n- Masonry grid and focus on big images\r\n- Google Analytics Support\r\n- SEO (Sitemap, OpenGraph tags, Twitter tags)\r\n- Offline Support & WebApp Manifest\r\n\r\n## 🚀 Getting Started\r\n\r\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-emilia) [![Edit gatsby-starter-portfolio-emilia](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-emilia/tree/master/)\r\n\r\n1. **Create a Gatsby site.**\r\n\r\nUse the Gatsby CLI to create a new site, specifying this project\r\n\r\n```sh\r\ngatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-emilia\r\n```\r\n\r\n2. **Start developing.**\r\n\r\nNavigate into your new site's directory and start it up.\r\n\r\n```sh\r\ncd project-name\r\ngatsby develop\r\n```\r\n\r\n3. **Open the code and start customizing!**\r\n\r\nYour site is now running at `http://localhost:8000`!\r\n\r\nIf you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can checkout this [shorter](https://www.gatsbyjs.org/docs/themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.org/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.\r\n\r\n## 📝 Using and modifying this starter\r\n\r\n**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the underlying theme!\r\n\r\nThis starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia).\r\n\r\nHave a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-emilia/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.\r\n\r\n### Adding a new project\r\n\r\nNew projects will be shown on the index page of this theme and can be added by creating MDX files inside `content/projects`. General setup:\r\n\r\n1. Create a new folder inside `content/projects`\r\n1. Create a new `index.mdx` file, and add the frontmatter\r\n1. Add images to the created folder (from step 1)\r\n1. Reference your desired images as your `cover` in the frontmatter\r\n1. Write your content below the frontmatter (optional)\r\n\r\n**Frontmatter reference:**\r\n\r\n```md\r\n---\r\ncover: \"./sean-foley-0JD7kvxAq0Y-unsplash.jpg\"\r\ndate: \"2019-09-10\"\r\ntitle: \"Emilia\"\r\nareas:\r\n  - Neon\r\n  - Lights\r\n---\r\n```\r\n\r\nThe frontmatter alone is enough, if you'd like to add additional content you can do so by writing your content (as usual with MDX) below the frontmatter. It'll be displayed in the header of the project below the date and areas.\r\n\r\n### Changing the \"About Me\" text\r\n\r\nCreate a file at `src/@lekoarts/gatsby-theme-emilia/texts/about-me.mdx` to edit the text.\r\n\r\n### Changing the avatar\r\n\r\nPlace an image with the name `avatar` inside the folder `content/assets` (or your custom `assetsPath` which you defined for the theme).\r\n\r\n### Change your `static` folder\r\n\r\nThe `static` folder contains the icons, social media images and robots.txt. Don't forget to change these files, too!\r\n\r\n## 🤔 Questions or problems?\r\n\r\nPlease open up an issue on the main repository: [LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes). Thanks!\r\n\r\n## 🎓 Learning Gatsby\r\n\r\nLooking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.org/).\r\n\r\n### Themes\r\n\r\n- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).\r\n\r\n### General\r\n\r\n- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.\r\n\r\n- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.\r\n\r\n## 🌟 Supporting me\r\n\r\nThanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.\r\n\r\nPlease star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts)!\r\n\r\nIf you want to hire me for **contract/freelance work**, you can do so! [Get in touch with me!](https://www.lekoarts.de/en/contact)\r\n"
+  },
+  "lekoarts-gatsby-starter-portfolio-emma-master": {
+    "file": "gatsby-starter-portfolio-emma.md",
+    "repoUrl": "https://github.com/LekoArts/gatsby-starter-portfolio-emma",
+    "repoName": "LekoArts/gatsby-starter-portfolio-emma",
+    "branch": "master",
+    "themeKey": "lekoarts-gatsby-starter-portfolio-emma-master",
+    "title": "Gatsby Emma",
+    "demo": "https://emma.lekoarts.de/",
+    "author": "Lennart",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images. Especially designers and/or photographers will love this theme! Built with MDX and Theme UI.",
+    "theme_key": "lekoarts-gatsby-starter-portfolio-emma-master",
+    "name": "gatsby-starter-portfolio-emma",
+    "github_username": "LekoArts",
+    "repo": "LekoArts/gatsby-starter-portfolio-emma",
+    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-emma",
+    "stars": 191,
+    "forks": 57,
+    "open_issues": 0,
+    "last_commit": "2020-01-12T22:23:57Z",
+    "created_at": "2017-10-18T19:20:05Z",
+    "readmeContent": "<p align=\"center\">\n  <a href=\"https://emma.lekoarts.de\">\n    <img alt=\"LekoArts\" src=\"https://img.lekoarts.de/gatsby/gatsby-site-illustration.png\" />\n  </a>\n</p>\n<h1 align=\"center\">\n  Gatsby Starter Portfolio: Emma\n</h1>\n\n<p align=\"center\">\n  <a href=\"https://github.com/LekoArts/gatsby-starter-portfolio-emma/blob/master/LICENSE\">\n    <img src=\"https://img.shields.io/badge/license-MIT-blue.svg\" alt=\"Gatsby Starter Portfolio: Emma is released under the MIT license.\" />\n  </a>\n  <img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs welcome!\" />\n  <a href=\"https://twitter.com/intent/follow?screen_name=lekoarts_de\">\n    <img src=\"https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de\" alt=\"Follow @lekoarts_de\" />\n  </a>\n  <a href=\"https://app.netlify.com/sites/portfolio-emma/deploys\">\n      <img src=\"https://api.netlify.com/api/v1/badges/5a4f3e8c-82cb-411d-89f1-fcfde2d3cf80/deploy-status\" alt=\"Netlify Status\" />\n    </a>\n</p>\n\nMinimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images. Using the Gatsby Theme [`@lekoarts/gatsby-theme-emma`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emma).\n\n[**Demo Website**](https://emma.lekoarts.de)\n\nAlso be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)\n\n## ✨ Features\n\n- MDX\n- react-spring page animations\n- Optional MDX pages which automatically get added to the navigation\n- Fully customizable through the usage of Gatsby Themes (and Theme UI)\n- Light Mode / Dark Mode\n- Google Analytics Support\n- SEO (Sitemap, OpenGraph tags, Twitter tags)\n- Offline Support & WebApp Manifest\n\n## 🚀 Getting Started\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-emma) [![Edit gatsby-starter-portfolio-emma](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-emma/tree/master/)\n\n1. **Create a Gatsby site.**\n\nUse the Gatsby CLI to create a new site, specifying this project\n\n```sh\ngatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-emma\n```\n\n2. **Start developing.**\n\nNavigate into your new site's directory and start it up.\n\n```sh\ncd project-name\ngatsby develop\n```\n\n3. **Open the code and start customizing!**\n\nYour site is now running at `http://localhost:8000`!\n\nIf you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can checkout this [shorter](https://www.gatsbyjs.org/docs/themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.org/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.\n\n## 📝 Using and modifying this starter\n\n**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the underlying theme!\n\nThis starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-emma`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emma).\n\nHave a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-emma/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.\n\n### Adding content\n\n#### Adding a new project\n\nNew projects will be shown on the index page of this theme and can be added by creating MDX files inside `content/projects`. General setup:\n\n1. Create a new folder inside `content/projects`\n1. Create a new `index.mdx` file, and add the frontmatter\n1. Add an image to the created folder (from step 1)\n1. Reference this image as your `cover` in the frontmatter\n1. Write your content below the frontmatter\n\n**Frontmatter reference:**\n\n```md\n---\nclient: \"LekoArts\"\ntitle: \"Theme\"\ncover: \"./image.jpg\"\ndate: \"2019-06-10\"\nservice: \"Theme\"\ncolor: \"#8e9d31\"\n---\n```\n\n#### Adding a new page\n\nAdditional pages will be shown in the navigation (left side) and allow you to display content other than projects, e.g. a \"Contact\" or \"About Me\" page. General setup:\n\n1. Create a new folder inside `content/pages`\n1. Create a new `index.mdx` file, and add the frontmatter\n1. Add an image to the created folder (from step 1)\n1. Reference this image as your `cover` in the frontmatter\n1. Write your content below the frontmatter\n\n**Frontmatter reference:**\n\n```md\n---\ntitle: \"Name\"\nslug: \"/name\"\ncover: \"./name.jpg\"\n---\n```\n\n### Change your `static` folder\n\nThe `static` folder contains the icons, social media images and robots.txt. Don't forget to change these files, too!\n\n## 🤔 Questions or problems?\n\nPlease open up an issue on the main repository: [LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes). Thanks!\n\n## 🎓 Learning Gatsby\n\nLooking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.org/).\n\n### Themes\n\n- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).\n\n### General\n\n- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.\n\n- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.\n\n## 🌟 Supporting me\n\nThanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.\n\nPlease star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts)!\n\nIf you want to hire me for **contract/freelance work**, you can do so! [Get in touch with me!](https://www.lekoarts.de/en/contact)\n"
+  },
+  "lekoarts-gatsby-starter-portfolio-jodie-master": {
+    "file": "gatsby-starter-portfolio-jodie.md",
+    "repoUrl": "https://github.com/LekoArts/gatsby-starter-portfolio-jodie",
+    "repoName": "LekoArts/gatsby-starter-portfolio-jodie",
+    "branch": "master",
+    "themeKey": "lekoarts-gatsby-starter-portfolio-jodie-master",
+    "title": "Gatsby Jodie",
+    "demo": "https://jodie.lekoarts.de/",
+    "author": "Lennart",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Image-heavy photography portfolio with colorful accents & great typography",
+    "theme_key": "lekoarts-gatsby-starter-portfolio-jodie-master",
+    "name": "gatsby-starter-portfolio-jodie",
+    "github_username": "LekoArts",
+    "repo": "LekoArts/gatsby-starter-portfolio-jodie",
+    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-jodie",
+    "stars": 116,
+    "forks": 25,
+    "open_issues": 1,
+    "last_commit": "2020-01-14T10:29:55Z",
+    "created_at": "2019-02-19T15:17:30Z",
+    "readmeContent": "![](https://i.imgur.com/TlwEgUo.png)\r\n\r\n# Gatsby Starter Portfolio: Jodie\r\n\r\nA portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience are designers and photographers.\r\n\r\n[Demo Website](https://jodie.lekoarts.de)\r\n\r\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-jodie) [![Edit gatsby-starter-portfolio-jodie](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LeKoArts/gatsby-starter-portfolio-jodie/tree/master/)\r\n\r\n[![Netlify Status](https://api.netlify.com/api/v1/badges/f51f5488-aa2d-4e42-baa7-4182d9e81c2e/deploy-status)](https://app.netlify.com/sites/portfolio-jodie/deploys) [![CircleCI](https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-jodie.svg?style=svg)](https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-jodie)\r\n\r\n- CSS-Grid powered layout with Sidebar\r\n- Large images & Instagram integration\r\n- Themeable pages & automatically adapting sidebar\r\n\r\n## Why?\r\n\r\nIf you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site, the starters in _gatsby-starter-portfolio_ are a perfect fit for you! The project's goal is to offer minimalistic and fast websites.\r\n\r\nI hope you like my starters and create something awesome! To see some of my work, you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights). Every pledge on Patreon helps me create more free starters!\r\n\r\nAlso, check out the other starters for _gatsby-starter-portfolio_:\r\n\r\n- [gatsby-starter-portfolio-emma](https://github.com/LekoArts/gatsby-starter-portfolio-emma)\r\n- [gatsby-starter-portfolio-emilia](https://github.com/LekoArts/gatsby-starter-portfolio-emilia)\r\n- [gatsby-starter-portfolio-bella](https://github.com/LekoArts/gatsby-starter-portfolio-bella)\r\n- [gatsby-starter-portfolio-cara](https://github.com/LekoArts/gatsby-starter-portfolio-cara)\r\n\r\nCheck out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfolio.netlify.com/)!\r\n\r\n## Features\r\n\r\n- Configurable\r\n    - Use the config to easily change the most important information\r\n    - Change the theming for styled-components\r\n    - Navigation powered by a .yaml file\r\n    - Layout driven by CSS-Grid\r\n- Create your projects by creating a folder full of images and adding an entry to a .yaml file\r\n- Shows your Instagram posts\r\n- TypeScript\r\n- Cypress for End-to-End testing\r\n- react-spring animations\r\n- Uses styled-components + styled-system for styling\r\n- Google Analytics support\r\n- SEO\r\n    - Sitemap\r\n    - Schema.org JSONLD\r\n    - OpenGraph Tags\r\n    - Twitter Tags\r\n- Offline Support\r\n- WebApp Manifest Support\r\n- Responsive Images\r\n    - Right image sizes\r\n    - Blurred loading animation\r\n    - WebP support\r\n    \r\n## Getting Started\r\n\r\nCheck your development environment! You'll need [Node.js](https://nodejs.org/en/), the [Gatsby CLI](https://www.gatsbyjs.org/docs/) and [node-gyp](https://github.com/nodejs/node-gyp#installation) installed. The official Gatsby website also lists two articles regarding this topic:\r\n- [Gatsby on Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/)\r\n- [Check your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)\r\n\r\nTo copy and install this starter run this command (with \"project-name\" being the name of your folder you wish to install it in):\r\n\r\n```\r\ngatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-jodie\r\ncd project-name\r\nnpm run develop\r\n```\r\n\r\n### Configuring the Instagram source plugin\r\n\r\n1. You need to have a Facebook page (I know... :/)\r\n1. Go to your site settings -> Instagram -> Login into your Instagram account\r\n1. Create a [app](https://developers.facebook.com/apps/)\r\n1. Go to the [Graph API Explorer][gae]\r\n    1. Select your App from the top right dropdown menu\r\n    1. Select \"Get User Access Token\" from dropdown (right of access token field) and select needed permissions (manage_pages, pages_show_list, instagram_basic)\r\n    1. Copy user access token\r\n1. [Access Token Debugger][atd]:\r\n    1. Paste copied token and press \"Debug\"\r\n    1. Press \"Extend Access Token\" and copy the generated long-lived user access token\r\n1. [Graph API Explorer][gae]:\r\n    1. Paste copied token into the \"Access Token\" field\r\n    1. Make a GET request with \"PAGE_ID?fields=access_token\"\r\n    1. Find the permanent page access token in the response (node \"access_token\")\r\n1. [Access Token Debugger][atd]:\r\n    1. Paste the permanent token and press \"Debug\"\r\n    1. \"Expires\" should be \"Never\"\r\n    1. Copy the **access token**\r\n1. [Graph API Explorer][gae]:\r\n    1. Make a GET request with \"PAGE_ID?fields=instagram_business_account\" to get your **Business ID**\r\n    \r\nNow create a `.env` file at the root of the project with the following content:\r\n\r\n```\r\nBUSINESS_ID=YOUR_ID\r\nACCESS_TOKEN=YOUR_TOKEN\r\n```\r\n\r\nYou can paste your access token and Business ID there.\r\n\r\n### Adding a new project\r\n\r\n1. Create a new folder in `content/projects` and place your images there\r\n1. Add your project to the `content/projects/projects.yaml` file\r\n\r\n### Adding a new page\r\n\r\nCreate a new `.tsx` file in the `src/pages` directory\r\n\r\n### Adding new features/plugins\r\n\r\nYou can add other features by having a look at the official [plugins page](https://www.gatsbyjs.org/docs/plugins/)\r\n\r\n### Building your site\r\n\r\n```\r\nnpm run build\r\n```\r\nCopy the content of the `public` folder to your webhost or use a website like Netlify which automates that for you.\r\n\r\n## Configuration\r\n\r\nYou can configure your setup in `config/index.js`:\r\n\r\n```JS\r\nmodule.exports = {\r\n  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be \"portfolio\"\r\n\r\n  siteTitle: 'Jodie', // Navigation and Site Title\r\n  siteTitleAlt: 'Jodie - Gatsby Starter Portfolio', // Alternative Site title for SEO\r\n  siteTitleShort: 'Jodie', // short_name for manifest\r\n  siteHeadline: 'Come & Enjoy our excellent photos', // Headline for schema.org JSONLD\r\n  siteUrl: 'https://jodie.lekoarts.de', // Domain of your site. No trailing slash!\r\n  siteLanguage: 'en', // Language Tag on <html> element\r\n  siteLogo: '/logos/logo.png', // Used for SEO and manifest\r\n  siteDescription: 'Image-heavy photography portfolio with colorful accents & great typography',\r\n  author: 'LekoArts', // Author for schema.org JSONLD\r\n\r\n  // siteFBAppID: '123456789', // Facebook App ID - Optional\r\n  userTwitter: '@jodie', // Twitter Username\r\n  ogSiteName: 'jodie', // Facebook Site Name\r\n  ogLanguage: 'en_US', // og:language\r\n  googleAnalyticsID: 'UA-XXXXXX-X',\r\n\r\n  // Manifest and Progress color\r\n  themeColor: '#db7436',\r\n  backgroundColor: '#3b3c4f',\r\n}\r\n```\r\n\r\nYou can also configure the styling of the site by editing the theme variables in `config/theme.ts`.\r\n\r\n```typescript\r\ninterface ThemeShape {\r\n  breakpoints: string[]\r\n  fontSizes: string[]\r\n  colors: {\r\n    [key: string]: string\r\n  }\r\n  space: string[]\r\n  fontWeights: {\r\n    [key: string]: number\r\n  }\r\n  sidebarWidth: {\r\n    [key: string]: string\r\n  }\r\n}\r\n\r\nconst theme: ThemeShape = {\r\n  breakpoints: ['480px', '650px', '1000px', '1200px', '1400px'],\r\n  fontSizes: ['1rem', '1.2rem', '1.44rem', '1.728rem', '2.074rem', '2.488rem'],\r\n  colors: {\r\n    primary: '#c66131',\r\n    secondary: '#494992',\r\n    grey: '#646066',\r\n    shade: '#f5f5f5',\r\n  },\r\n  space: [\r\n    '0',\r\n    '0.25rem',\r\n    '0.5rem',\r\n    '0.75rem',\r\n    '1rem',\r\n    '1.25rem',\r\n    '1.5rem',\r\n    '2rem',\r\n    '2.5rem',\r\n    '3rem',\r\n    '4rem',\r\n    '6rem',\r\n    '8rem',\r\n    '12rem',\r\n    '16rem',\r\n  ],\r\n  fontWeights: {\r\n    normal: 400,\r\n    bold: 700,\r\n  },\r\n  sidebarWidth: {\r\n    big: '375px',\r\n    normal: '320px',\r\n  },\r\n}\r\n\r\nexport default theme\r\n```\r\n\r\n**Attention:** You also need to edit `static/robots.txt` to include your domain!\r\n\r\n[gae]: https://developers.facebook.com/tools/explorer/\r\n[atd]: https://developers.facebook.com/tools/debug/accesstoken/\r\n"
+  },
+  "mhadaily-gatsby-starter-typescript-power-blog-master": {
+    "file": "gatsby-starter-typescript-power-blog.md",
+    "repoUrl": "https://github.com/mhadaily/gatsby-starter-typescript-power-blog",
+    "repoName": "mhadaily/gatsby-starter-typescript-power-blog",
+    "branch": "master",
+    "themeKey": "mhadaily-gatsby-starter-typescript-power-blog-master",
+    "title": "Gatsby Power Blog",
+    "demo": "https://gatsby-starter-typescript-power-blog.majidhajian.com/",
+    "author": "Majid Hajian",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Minimal Personal Blog with Gatsby and Typescript",
+    "theme_key": "mhadaily-gatsby-starter-typescript-power-blog-master",
+    "name": "gatsby-starter-typescript-power-blog",
+    "github_username": "mhadaily",
+    "repo": "mhadaily/gatsby-starter-typescript-power-blog",
+    "url": "https://github.com/mhadaily/gatsby-starter-typescript-power-blog",
+    "stars": 47,
+    "forks": 11,
+    "open_issues": 1,
+    "last_commit": "2020-01-07T13:31:27Z",
+    "created_at": "2018-10-19T12:42:53Z",
+    "readmeContent": "## Gatsby 2 Power blog starter with Typescript\nMore features are coming, stay tuned! \n\n## Success Stories:\n- I am using this template for my website https://www.majidhajian.com\n\n### Description\nThis is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky), Sass, StyleComponent, PWA\n\n#### Desktop\n<img src=\"https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/desktop.png\">\n\n#### Mobile\n<img src=\"https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/mobile.png\" width=\"300px\">\n\n### new project\n```\ngatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescript-power-blog\n```\n\n### Keywords\n  - PWA\n  - Blog\n  - Personal website\n  - TypeScript\n  - TSLint\n  - Progressive web app\n  - StyleLint\n  - Prettier\n  - Lint-Staged\n  - Styling:SCSS\n  - Prisim.js\n  - Style Components\n  - Markdown\n  - Pagination\n\n### Features\n  - Mobile-First approach in development.\n  - TSLint & Prettier\n  - Offline support\n  - Category and Tag for post\n  - Type Safe by TypeScript\n  - Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky)\n  - Blog page\n  - Syntax highlighting in code blocks.\n  - Pagination Ready\n  - Ready to deploy to Github pages\n  - Automatic RSS generation.\n  - Automatic Sitemap generation.\n  - Automatic support for Google Tag Manager\n"
+  },
+  "narative-gatsby-theme-novela-master": {
+    "file": "gatsby-theme-novela.md",
+    "repoUrl": "https://github.com/narative/gatsby-theme-novela",
+    "repoName": "narative/gatsby-theme-novela",
+    "branch": "master",
+    "themeKey": "narative-gatsby-theme-novela-master",
+    "title": "Gatsby Novela",
+    "demo": "https://novela.narative.co/",
+    "author": "Narative",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "Contentful"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "theme"
+    },
+    "license": "MIT",
+    "description": "Welcome to Novela, the simplest way to start publishing with Gatsby.",
+    "theme_key": "narative-gatsby-theme-novela-master",
+    "name": "gatsby-theme-novela",
+    "github_username": "narative",
+    "repo": "narative/gatsby-theme-novela",
+    "url": "https://github.com/narative/gatsby-theme-novela",
+    "stars": 814,
+    "forks": 166,
+    "open_issues": 15,
+    "last_commit": "2020-01-14T07:37:58Z",
+    "created_at": "2019-08-01T04:08:19Z",
+    "readmeContent": "<a href=\"https://www.narative.co/labs/novela/\" target=\"_blank\">\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-hero.jpg\" alt=\"gatsby-novela-theme hero image\" />\n</a>\n\n<br/>\n\n# Novela — A Gatsby theme by Narative\n\nWith minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.\n\nNovela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.\n\n<div>\n<a href=\"https://www.narative.co/labs/novela/\" target=\"_blank\">\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg\" alt=\"gatsby-novela-theme live demo\" width=\"295px\" />\n</a>\n</div>\n\n<div>\n<a href=\"https://www.narative.co/design/open/novela\" target=\"_blank\">\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg\" alt=\"gatsby-novela-theme figma link\" width=\"295px\" />\n</a>\n</div>\n\n### Table of Contents\n\n- [Why Novela?](#why-use-novela)\n\n- [Getting Started](#getting-started-with-gatsby-starter-novela)\n\n  - With Gatsby Starter Novela\n\n    - [Installation](#step-1-starter-installation)\n    - [Develop & Build](#step-2-develop--build)\n\n  - From scatch\n\n    - [Installation](#step-1-installation)\n    - [Folder structure](#step-2-folder-structure)\n    - [Using Novela Theme](#step-3-using-narativegatsby-theme-novela)\n    - [Adding an Author](#step-4-adding-an-author)\n    - [Adding a Post](#step-5-adding-a-post)\n    - [Configuring Site Metadata](#step-6-configuring-sitemetadata)\n\n- [Data Sources](#data-sources)\n\n  - [Local](#local)\n  - [Contentful](#contentful)\n\n- [Customization](#customization)\n\n  - [Enabling Author Pages](#enabling-author-pages)\n  - [Changing styles](#changing-styles)\n  - [Component shadowing](#component-shadowing)\n  - [Using images](#using-images)\n  - [Adding your logo](#adding-your-logo)\n  - [Adding Mailchimp](#adding-mailchimp)\n\n- [Data Models](#data-models)\n\n  - [Theme Options](#theme-options)\n  - [Author](#author)\n  - [Post](#post)\n  - [Site Metadata](#site-metadata)\n\n- [Future](#the-future)\n\n  <br />\n\n# Getting Started with Gatsby Starter Novela\n\nThis guide will take you through setting up Novela with Gatsby Starter Novela.\n\n### Step 1: Starter installation\n\n##### With `gatsby-cli`:\n\n```sh\ngatsby new novela-site https://github.com/narative/gatsby-starter-novela\n```\n\n##### With `git clone`:\n\n```sh\ngit clone git@github.com:narative/gatsby-starter-novela.git novela-site\n\ncd novela-site\n\nyarn\n```\n\n### Step 2: Develop & Build\n\nOnce installed or cloned locally and all packages are installed you can begin developing your site.\n\n```sh\n# Run localhost\nyarn dev\n\n# Build your Gatsby site\nyarn build\n```\n\nTo learn more about adding Authors, Posts, and Site Metadata see:\n\n- [Adding an Author](#step-4-adding-an-author)\n- [Adding a Post](#step-5-adding-a-post)\n- [Configuring Site Metadata](#step-6-configuring-sitemetadata)\n\n# Getting Started from scratch\n\nThis guide will take you through adding Novela to a new project. You do not require any Gatsby starters or similar, but you can add Novela to an existing Gatsby project.\n\nYou can also view the completed [example repository](https://github.com/narative/gatsby-theme-novela-example).\n\n### Step 1: Installation\n\n```sh\n# Create an empty directory and go into it\nmkdir novela-site && cd novela-site\n\n# Add all required depedencies\nyarn add react react-dom gatsby @narative/gatsby-theme-novela\n```\n\n### Step 2: Folder structure\n\nOnce you've installed React, Gatsby, and Novela you'll want to add your first Author and Post.\n\nThe recommended project structure for your content and site looks like this:\n\n```\n  novela-site\n    ├── content\n    │ ├── authors\n    │ │   ├── avatars\n    │ │   │    └── avatar.jpg\n    │ │   └── authors.yml\n    │ └── posts\n    │     └── 2020-01-01-my-first-novela-post\n    │         ├── images\n    │         │   └── novela-hero.jpg\n    │         └── index.mdx\n    ├── node_modules\n    ├── gatsby-config.js\n    └── package.json\n```\n\n### Step 3: Using `@narative/gatsby-theme-novela`\n\nYou must add `@narative/gatsby-theme-novela` as a plugin in `gatsby-config.js`.\n`@narative/gatsby-theme-novela` is configurable through plugin options but we will use the defaults for now.\n\n```js\n// gatsby-config.js\n\nmodule.exports = {\n  plugins: ['@narative/gatsby-theme-novela'],\n};\n```\n\n---\n\nOnce you've setup `@narative/gatsby-theme-novela` plugin in `gatsby-config.js` you can start creating your first Posts. In order to create a Post you also need at least one Author.\n\n### Step 4: Adding an Author\n\nIn [step 2](#step-2-folder-structure) we created the folder structure of our project. We can now add an Author by populating `/content/authors/authors.yml`:\n\n```\n  novela-site\n  └── content\n    └── authors\n        ├── avatars\n        │    └── brotzky-avatar.jpg\n        └── authors.yml\n```\n\nIn `authors.yml` add an Author. There **must** be at least one `featured` Author.\n\n`/content/authors/authors.yml`:\n\n```yml\n- name: Dennis Brotzky\n  bio: |\n    Written by Dennis Brotzky who lives and works in Vancouver building useful things.\n    You should follow him on Twitter.\n  avatar: ./avatars/brotzky-avatar.jpg\n  featured: true\n  social:\n    - url: https://unsplash.com\n    - url: https://stackoverflow.com\n    - url: https://github.com\n```\n\n### Step 5: Adding a Post\n\nOnce you have at least one Author defined in `authors.yml` you can add your first Post.\n\nStart by creating a new folder in `content/posts`. You can name it anything you like but we recommend including the date at the front to organize your posts. Once you've created your folder you can add an `index.mdx` file and an `images` folder.\n\n`/content/posts/2020-01-01/index.mdx`\n\n```yml\n---\ntitle: Why Narative loves Gatsby\nauthor: Dennis Brotzky\ndate: 2019-04-27\nhero: ./images/narative-gatsby-hero.jpg\nexcerpt: This is a love story about Narative and Gatsby\n---\n# And then under the heading YML you can insert any MDX you like\n# like headings, links, code, images, etc\n# This will show up in the body of your post\n# ...\n```\n\n### Step 6: Configuring siteMetadata\n\nIn order to configure the theme to properly generate the pages and meta tags you must add specific data to `siteMetadata`.\n\nThe fields that are unique to Novela are `hero.heading`, `hero.maxWidth`, and `social`.\n\nAdd your Site Metadata to the `gatsby-config.js` file.\n\n```js\n// gatsby-config.js\n\nmodule.exports = {\n  siteMetadata: {\n    title: `Novela by Narative`,\n    name: `Narative`,\n    siteUrl: `https://gatsby-theme-novela.netlify.com`,\n    description: `This is my description that will be used in the meta tags and important for search results`,\n\n    // important to set the main text that appears in the hero\n    hero: {\n      heading: `Perspectives on technology, design and business from the team at Narative.`,\n      maxWidth: 652,\n    },\n    social: [\n      {\n        name: `twitter`,\n        url: `https://twitter.com/narative`,\n      },\n      {\n        name: `github`,\n        url: `https://github.com/narative`,\n      },\n    ],\n  },\n  plugins: ['@narative/gatsby-theme-novela'],\n};\n```\n\n### You can now run your site\n\nOnce all steps have been completed you can run your site. In the root of your project run `gatsby develop`.\n\nIf you ran into problems you can reference the [example repository](https://github.com/narative/gatsby-theme-novela-example) or create an issue.\n\n<br />\n\n- [Data Sources](#data-sources)\n\n# Data Sources\n\nWith the flexibility of Gatsby, Novela is able to pull different data sources to build your website. Right now we support Contentful and your local file system. All data sources can be combined together or used separately.\n\n### Local\n\nLocal is the default data source for Novela. Write MDX and YAML in order to generate posts and authors. This is the fastest and simplest way to get started.\n\nTo learn how to use the local file system, read the [Installation](#installation) steps.\n\n### Contentful\n\nContentful provides the flexibility of a headless CMS which allows you to write content without committing new files and working in a text editor. The setup process is simple if you are familiar with Contentful.\n\nYou will need to setup your Contentful space and import the Novela model.\n\n#### Setting up `gatsby-source-contentful` in your project\n\nIn order to use Contentful you must first install the plugin and `dotenv` in your project\n\n```sh\nyarn add gatsby-source-contentful dotenv\n```\n\nThen pass in the enviroment variables `.env` to the plugin\n\n#### `.env`\n\n```\nCONTENTFUL_SPACE_ID= (Your Contentful Space ID)\nCONTENTFUL_ACCESS_TOKEN= (Your Content Delivery API - access token)\n```\n\n#### `gatsby-config.js`\n\n```js\nrequire('dotenv').config();\n\nplugins: [\n  {\n    resolve: 'gatsby-source-contentful',\n    options: {\n      spaceId: process.env.CONTENTFUL_SPACE_ID,\n      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,\n    },\n  },\n  {\n    resolve: '@narative/gatsby-theme-novela',\n    options: {\n      sources: {\n        contentful: true,\n      },\n    },\n  },\n];\n```\n\nFinally, import the Contentful Model from Novela to get started. Novela Contentful Queries will not work without this exact data model.\n\n#### [Novela Contentful Data](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/contentful)\n\n[Contentful space import docs](https://github.com/contentful/contentful-cli/tree/master/docs/space/import)\n\nOnce you have your project setup with `gatsby-source-contentful` and `@narative/gatsby-theme-novela` and your Contentful space is setup with the imported model you are good to go.\n\n⚠️ Please make sure you have at least one Media Asset uploaded or you will run into a GraphQL error: https://github.com/gatsbyjs/gatsby/issues/15397\n\n# Customization\n\nOnce you've created the Logo component it should automatically appear in your site.\n\nThe technique we have used is called Component Shadowing and is a core feature of Gatsby Themes.\n\n### Enabling Author pages\n\nBy default Author pages are not enabled. They can be enabled through the plugin option `authorsPage`. If you decided to enable Author pages please make sure you have all the required for each author you add.\n\n```js\nmodule.exports = {\n  plugins: [\n    {\n      resolve: '@narative/gatsby-theme-novela',\n      options: {\n        authorsPage: true,\n      },\n    },\n  ],\n};\n```\n\n### Changing styles\n\nNovela allows you to change the default theme styling by updating the [theme-ui](https://theme-ui.com/) values. If you're familiar with Styled Components or Emotion it's the same as adapting the theme you pass to `ThemeProvider`.\n\nFirst, you must create a theme file and then you can override `novelaTheme` values.\n[See all Novela theme values](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui)\n\n```js\n// src/gatsby-plugin-theme-ui/index.js\n\nimport novelaTheme from '@narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui';\n\nexport default {\n  ...novelaTheme,\n  initialColorMode: `dark`,\n  colors: {\n    ...novelaTheme.colors,\n    primary: '#000',\n    secondary: '#73737D',\n    accent: '#6166DC',\n    grey: '#73737D',\n    background: '#fff',\n  },\n};\n```\n\n### Component Shadowing\n\n> This feature allows users to override a component in order to customize its rendering.\n\n> Component Shadowing lets you replace the theme’s original file, gatsby-theme-novela/src/components/Logo.js, with your own to implement any changes you need.\n\nAny [component](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/src/components) or [section](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/src/sections) is able to be replaced with your own custom component.\n\nThis opens up a full customization of Novela to your designed needs. You can copy any component directly from Novela and alter it how you like, or you can create your own component to replace Novela's entirely.\n\nA basic example of component shadowing is explained below by [adding your logo](#adding-your-logo).\n\n### Using images\n\nImages can be added to Posts and customized to fit your content. Define a regular Markdown image that will default to Small or write HTML to customize the sizes. All images can be clicked to zoom.\n\n```html\n![This is the alt text for small image](./images/small.jpg)\n\n<div className=\"Image__Small\">\n  <img src=\"./images/medium.jpg\" alt=\"This is the alt text small image\" />\n</div>\n\n<div className=\"Image__Medium\">\n  <img src=\"./images/medium.jpg\" alt=\"This is the alt text medium image\" />\n</div>\n\n<div className=\"Image__Large\">\n  <img src=\"./images/large.jpg\" alt=\"This is the alt text large image\" />\n</div>\n```\n\n| Size   |   Class Name    |          Desciption           |\n| ------ | :-------------- | :---------------------------- |\n| small  | Image\\_\\_Small  |       Width of the text       |\n| medium | Image\\_\\_Medium | Larger than width of the text |\n| large  | Image\\_\\_Large  |       Full width image        |\n\n### Adding your logo\n\nYour logo must be in SVG (vector) format in order to add it to the theme. This is required because we will be making a React component containing your SVG Logo.\n\nStart by creating the component file at:\n\n```\n  novela-site\n  └── src\n    └── @narative\n      └── gatsby-theme-novela\n        └── components\n          └── Logo\n            └── index.js\n```\n\nIt is important you create the exact folder structure so Gatsby knows to shadow this component. Once the file is created you can create your Logo component.\n\n```jsx\nimport React from 'react';\n\n/**\n * Paste in your SVG logo and return it from this component.\n * Make sure you have a height set for your logo.\n * It is recommended to keep the height within 25-35px.\n */\nexport default function Logo() {\n  return (\n    <svg viewBox=\"0 0 106 28\" height=\"30px\">\n      <path d=\"M62.9 12h2.8v10....\" />\n      <path fill=\"#fff\" d=\"M25 14h-...\" />\n      <path d=\"M14 0C6.3...\" fill=\"#639\" />\n    </svg>\n  );\n}\n```\n\n### Adding Mailchimp\n\nWant to add a subscription newsletter to your Posts? Novela gives you the option to integrate and build your following in a few easy steps.\n\nStart by downloading [gatsby-plugin-mailchimp](https://github.com/benjaminhoffman/gatsby-plugin-mailchimp):\n\n```sh\nyarn add gatsby-plugin-mailchimp\n```\n\nThen configure the plugins\n\n```js\nplugins: [\n  {\n    resolve: '@narative/gatsby-theme-novela',\n    options: {\n      contentPosts: 'content/posts',\n      contentAuthors: 'content/authors',\n      basePath: '/',\n      mailchimp: true, // make sure this is true!\n    },\n  },\n  {\n    resolve: 'gatsby-plugin-mailchimp',\n    options: {\n      endpoint: '', // add your MC list endpoint here; see plugin repo for instructions\n    },\n  },\n];\n```\n\nThat's it. You will now have subscription boxes on each of your Posts.\nTo disable the subscription box on individual Posts you can set `subscription: false` on the Post.\n\nYou can shadow the Subscription component to customize the text displayed. It is recommneded to copy and paste the current component and only alter the text.\n\nYou will want to override it here:\n\n```\n  novela-site\n  └── src\n    └── @narative\n      └── gatsby-theme-novela\n        └── components\n          └── Subscription\n            └── index.js\n```\n\n<br />\n\n# Data Models\n\n## Theme Options\n\nIt is recommended to use the Default options, but if your project requires something else you can configure them to your need.\n\n| Option                 |     Default     |                                                             Description                                                             |\n| ---------------------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------- |\n| contentPosts           |  content/posts  |                                          Define where you want to pull your Post data from                                          |\n| contentAuthors         | content/authors |                                         Define where you want to pull your Author data from                                         |\n| authorsPage            |      false      |                                                         Create Author pages                                                         |\n| authorsPath            |    /authors     |                                                   Where should Author pages live?                                                   |\n| rootPath               |        /        |                                                   Define the index of your site                                                     |\n| basePath               |        /        |                      Where should the site be served from? `/blog` will change all paths to start with `/blog`                      |\n| articlePermalinkFormat |      :slug      | Define the format of the article permalink. Possible values: `:slug`, `:year`, `:month`, `:day`. Example: `:year/:month/:day/:slug` |\n| mailchimp              |      false      |                                             Enable Mailchimp subscriptions on each Post                                             |\n| sources.local          |      true       |                                                Enable local file system data source                                                 |\n| sources.contentful     |      false      |                                                    Enable Contentful data source                                                    |\n\n[View Theme option example](https://github.com/narative/gatsby-theme-novela-example/blob/master/gatsby-config.js#L36)\n\n```js\nplugins: [\n  {\n    resolve: '@narative/gatsby-theme-novela',\n    options: {\n      contentPosts: 'content/posts',\n      contentAuthors: 'content/authors',\n      rootPath: '/',\n      basePath: '/',\n      mailchimp: true,\n      sources: {\n        local: true,\n        contentful: true,\n      },\n    },\n  },\n];\n```\n\n## Author\n\n[View Author example](https://github.com/narative/gatsby-theme-novela-example/blob/master/content/authors/authors.yml)\n\n| Key      | Required |  Type   |                                                                 Desciption                                                                 |\n| -------- | :------: | :----- | :---------------------------------------------------------------------------------------------------------------------------------------- |\n| name     | required | String  |                                The Author's full name which is used should be used as a reference in Posts                                 |\n| bio      | required | String  |                                            The Author's bio which is displayed on the home page                                            |\n| avatar   | required |  Image  |                                                            The Author's avatar                                                             |\n| featured | optional | Boolean |                                              If `true` the Author will appear on the homepage                                              |\n| slug     | optional | String  |                          Override the autogenerated slug based on the Author's name. Do not include any slashes.                           |\n| social   | required |  Array  | A list of social accounts and urls. [View supported icon/name combinations](https://github.com/narative/gatsby-theme-novela/blob/master/%40narative/gatsby-theme-novela/src/components/SocialLinks/SocialLinks.tsx#L15) |\n\n```yml\n- name: Dennis Brotzky\n  bio: |\n    Written by You. This is where your author bio lives. Share your work, your\n    joys and of course, your Twitter handle.\n  avatar: ./avatars/dennis-brotzky.jpg\n  featured: true\n  social:\n    - url: https://github.com\n    - url: https://twitter.com\n\n- name: Thiago Costa\n  bio: |\n    Written by You. This is where your author bio lives. Share your work, your\n    joys and of course, your Twitter handle.\n  avatar: ./avatars/thiago-costa.png\n```\n\n## Post\n\n| Key          | Required |    Type    |                                          Description                                          |\n| ------------ | :------: | :-------- | :------------------------------------------------------------------------------------------- |\n| title        | required |   String   |                  Used as title and generates a default slug. Must be unique.                  |\n| slug         | optional |   String   |                Define a custom slug that will override the default title slug.                |\n| author       | required | String Ref | Must **match** a defined Author name. Co-author posts by adding comma seperated Author names. |\n| date         | required |    Date    |                                       YYYY-MM-DD format                                       |\n| hero         | required |   Image    |                               1200px minimum width recommended                                |\n| excerpt      | required |   String   |                                      140 character limit                                      |\n| subscription | optional |   String   |          If mailchimp is enabled disable the subscription box on an individual Post           |\n| secret       | optional |  Boolean   |           If secret the Post will not appear in paginated lists. Defaults to false.           |\n\n[View Post example](https://github.com/narative/gatsby-theme-novela-example/blob/master/content/posts/2019-04-31-understanding-the-gatsby-lifecycle/index.mdx)\n\n```yml\n# novela-site/content/posts/2020-01-01/index.mdx\n---\ntitle: Why Narative loves Gatsby\nauthor: Dennis Brotzky, Thiago Costa, Brad Tiller\ndate: 2019-04-27\nhero: ./images/narative-gatsby-hero.jpg\nexcerpt: This is a love story about Narative and Gatsby\n---\n# And then under the heading YML you can insert any MDX you like\n# like headings, links, code, images, etc\n# This will show up in the body of your post\n# ...\n```\n\n## Site Metadata\n\n| Key           | Required |    Type    |                                                                     Description                                                                     |\n| ------------- | :------: | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |\n| title         | required |   String   |                                                            Used for the <title></title>                                                             |\n| name          | required | String Ref |                                           Used in multiple locations including meta tags and site footer                                            |\n| siteUrl       | required |    Date    |                                                                  Used in meta tags                                                                  |\n| description   | required |   String   |                                                                  Used in meta tags                                                                  |\n| hero.heading  | required |   String   |                                                                  Used in the Hero                                                                   |\n| hero.maxWidth | optional |   number   |                                                          Used in the Hero. Defaults to 652                                                          |\n| social        | required |   Array    | [View supported icon/name combinations](https://github.com/narative/gatsby-theme-novela/blob/master/%40narative/gatsby-theme-novela/src/components/SocialLinks/SocialLinks.tsx#L15). `url` is required and the icon is chosen based on the url. If you also provide `name`, then the icon will be the same as the name you provided as long as the name equals one of the supported icons (See example bellow). Used in site footer and meta tags |\n\n[View Site Metadata example](https://github.com/narative/gatsby-theme-novela-example/blob/master/gatsby-config.js)\n\nWithin `gatsby-config.js` you can configure `siteMetadata` to show the values you wish.\nIt is `required` to add `siteMetada`\n\n```js\n// gatsby-config.js\nmodule.exports = {\n  siteMetadata: {\n    title: `Novela by Narative`,\n    name: `Narative`,\n    siteUrl: `https://gatsby-theme-novela.netlify.com`,\n    description: `This is my description that will be used in the meta tags and important for search results`,\n\n    // hero\n    // A required key and will be displayed on the main page of Noveal\n    hero: {\n      heading: `Perspectives on technology, design and business from the team at Narative.`,\n      maxWidth: 652,\n    },\n\n    // social\n    // Add in the social links that will be displayed in the footer\n    social: [\n      {\n        url: `https://twitter.com/narative`,\n      },\n      {\n        url: `https://github.com/narative`,\n      },\n      {\n        url: `https://www.instagram.com/narative.co/`,\n      },\n      {\n        url: `https://dribbble.com/narativestudio`,\n      },\n      {\n        name: 'stackoverflow',\n        url: `https://bit.ly/1x0885j`,\n      },\n    ],\n  },\n};\n```\n\n## Why use Novela?\n\nThere are many Gatsby themes to choose from. Here’s why we think you won’t regret choosing Novela:\n\n### Multiple Homepage Layouts\n\nChoose between a variable width grid or a simpler list style to display each story.\n\n### Mailchimp integration\n\nStart building an audience and grow your blog subscribers with Mailchimp.\n\n### Toggleable Light and Dark Mode\n\nOut of the box, Novela includes both light and dark designs that can be toggled by the user anywhere across the site.\n\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-light-dark.gif\" alt=\"gatsby-novela-theme light dark theme demonstration\" />\n\n### Simple Customization with [Theme UI](https://theme-ui.com/)\n\nConsistent, easy-to-read code lets you quickly customize every color and setting.\n\n### Show code effortlessly\n\nHigh quality embedded codeblocks that make authoring technical blog posts a breeze.\n\n### Highlight-to-Share\n\nUsers can select text within an article to copy or share to platforms like Twitter and LinkedIn.\n\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-share.jpg\" alt=\"gatsby-novela-theme light dark theme demonstration\" />\n\n### Read Time and Progress\n\nRead time is automatically generated for each article based on length, with an animated bar tracking the reader’s progress through each piece.\n\n### Accessibility in Mind\n\nNavigable by cursor or keyboard, readable via screens and screen readers, Novela ensures everyone on the web can read what you write.\n\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-accessibility.gif\" alt=\"gatsby-novela-theme accessibility demonstration\" />\n\n# The Future\n\nThis project is early in development and we are interested in creating an even more extensible experience, and increased out-of-box functionality, including:\n\n- Data sources such as Prismic, Sanity, Contentful, Netlify CMS, and others\n- Built in search with Algolia or similar\n- Tags, categories, and more\n- More theme variations\n- More customization options\n\n<div>\n<a href=\"https://gatsby-theme-novela.netlify.com\" target=\"_blank\">\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg\" alt=\"gatsby-novela-theme live demo\" width=\"295px\" />\n</a>\n</div>\n\n<div>\n<a href=\"https://www.narative.co/design/open/novela\" target=\"_blank\">\n<img src=\"https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg\" alt=\"gatsby-novela-theme figma link\" width=\"295px\" />\n</a>\n</div>\n"
+  },
+  "parmsang-gatsby-starter-ecommerce-master": {
+    "file": "gatsby-starter-ecommerce.md",
+    "repoUrl": "https://github.com/parmsang/gatsby-starter-ecommerce",
+    "repoName": "parmsang/gatsby-starter-ecommerce",
+    "branch": "master",
+    "themeKey": "parmsang-gatsby-starter-ecommerce-master",
+    "title": "Gatsby Ecommerce",
+    "demo": "https://parmsang.github.io/gatsby-starter-ecommerce/",
+    "author": "Parminder Sanghera",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Gatsby template for creating an eCommerce site using the Moltin eCommerce API.",
+    "theme_key": "parmsang-gatsby-starter-ecommerce-master",
+    "name": "gatsby-starter-ecommerce",
+    "github_username": "parmsang",
+    "repo": "parmsang/gatsby-starter-ecommerce",
+    "url": "https://github.com/parmsang/gatsby-starter-ecommerce",
+    "stars": 322,
+    "forks": 83,
+    "open_issues": 0,
+    "last_commit": "2020-01-06T19:39:11Z",
+    "created_at": "2018-06-08T07:15:32Z",
+    "readmeContent": "# Gatsby Starter eCommerce\n\nGatsby starter for creating an eCommerce site using [Moltin eCommerce Api ](https://moltin.com/).\n\nThis starter adapts an [existing](https://github.com/moltin-examples/nextjs-demo-store) NextJS eCommerce starter for [GatsbyJS](https://www.gatsbyjs.org/).\n\nDemo: <https://parmsang.github.io/gatsby-starter-ecommerce/>\n\nThis starter originally used Gatsby v1 and has now been updated to v2. The original version can be found in branch \"gatsby-v1\".\n\n## Getting started\n\nInstall this starter (assuming Gatsby is installed) by running from your CLI:\n\n`gatsby new gatsby-store https://github.com/parmsang/gatsby-starter-ecommerce`\n\n### Running in development\n\n`npm run develop`\n\n### Additional Setup\n\nBoth a moltin and Stripe account are needed for this store to run successfully.\n\nCreate a `.env.development` and `.env.production` file at the project root with your moltin `client_id` and Stripe test `publishable key`.\n\n```dosini\nMOLTIN_CLIENT_ID=\nSTRIPE_PUBLISHABLE_KEY=\n```\n\n## Features\n\n- Moltin eCommerce API\n- React 16\n- PWA (includes manifest.webmanifest & offline support)\n- Eslint & Prettier\n- Styled Components\n- Google Analytics - (you enter the tracking-id)\n- Semantic-UI\n- Authentication via Moltin (Login and Register)\n- Stripe checkout\n"
+  },
+  "shobhitchittora-gatsby-starter-fashion-portfolio-master": {
+    "file": "gatsby-starter-fashion-portfolio.md",
+    "repoUrl": "https://github.com/shobhitchittora/gatsby-starter-fashion-portfolio",
+    "repoName": "shobhitchittora/gatsby-starter-fashion-portfolio",
+    "branch": "master",
+    "themeKey": "shobhitchittora-gatsby-starter-fashion-portfolio-master",
+    "title": "Gatsby Fashion Portfolio",
+    "demo": "https://gatsby-starter-fashion-portfolio.netlify.com/",
+    "author": "Shobhit Chittora",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "A Gatsby template for a professional and minimal fashion portfolio.",
+    "theme_key": "shobhitchittora-gatsby-starter-fashion-portfolio-master",
+    "name": "gatsby-starter-fashion-portfolio",
+    "github_username": "shobhitchittora",
+    "repo": "shobhitchittora/gatsby-starter-fashion-portfolio",
+    "url": "https://github.com/shobhitchittora/gatsby-starter-fashion-portfolio",
+    "stars": 1,
+    "forks": 2,
+    "open_issues": 0,
+    "last_commit": "2019-09-15T06:21:14Z",
+    "created_at": "2019-07-19T17:57:04Z",
+    "readmeContent": "<h1 align=\"center\">\n  Gatsby's Fashion Portfolio Starter\n</h1>\n\nA Gatsby starter for a professional and minimal fashion portfolio.\n\n## 🚀 Quick start\n\n1.  **Create a Gatsby site.**\n\n    Use the Gatsby CLI to create a new site, specifying the starter.\n\n    ```sh\n    # create a new Gatsby site using gatsby-starter-fashion-portfolio \n    gatsby new my-fashion-portfolio https://github.com/gatsbyjs/gatsby-starter-fashion-portfolio\n    ```\n\n1.  **Start developing.**\n\n    Navigate into your new site’s directory and start it up.\n\n    ```sh\n    cd my-fashion-portfolio /\n    gatsby develop\n    ```\n\n1.  **Open the source code and start editing!**\n\n    Your site is now running at `http://localhost:8000`!\n\n    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._\n\n    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!\n\n\n## 🎨 Make it your own?\n\n1.  **Putting your own images in**\n\n    a. For the Home Page, replace the image `image-home-page` in the `images` folder with your own ( keeping the name intact as `image-home-page`) <br/>\n    b. The images on Collections Page follow the patterns as below - <br/>\n>      i. `page-[page-number]-thumb` for thumbnail images\n>      ii. `page-[page-number]-large` for large images\n>      iii. `page-[page-number]-grid-[grid-index]` for grid images\n    c. Replace the images with the above patterns.\n\n\n1.  **Putting your own Logo in**\n\n    Update the component in `src/Logo` with your text or image.\n\n\n## 💻 Wanna contribute?\n\nThere are a lot of improvements to be done. Fork this off and reise PRs for any and all suggestions.\n\n## ☕️ Buy me a coffee?\n\nhttps://www.paypal.me/shobhitchittora\n\n\n## 💫 Deploy\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)\n"
+  },
+  "smakosh-gatsby-portfolio-dev-master": {
+    "file": "gatsby-portfolio-dev.md",
+    "repoUrl": "https://github.com/smakosh/gatsby-portfolio-dev",
+    "repoName": "smakosh/gatsby-portfolio-dev",
+    "branch": "master",
+    "themeKey": "smakosh-gatsby-portfolio-dev-master",
+    "title": "Gatsby Dev Portfolio",
+    "demo": "https://portfolio.smakosh.com/",
+    "author": "Ismail Ghallou",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Minimal Gatsby template to create a developer portfolio with projects and contact section.",
+    "theme_key": "smakosh-gatsby-portfolio-dev-master",
+    "name": "gatsby-portfolio-dev",
+    "github_username": "smakosh",
+    "repo": "smakosh/gatsby-portfolio-dev",
+    "url": "https://github.com/smakosh/gatsby-portfolio-dev",
+    "stars": 239,
+    "forks": 64,
+    "open_issues": 1,
+    "last_commit": "2020-01-14T03:28:48Z",
+    "created_at": "2018-12-27T16:25:46Z",
+    "readmeContent": "# Portfolio for developers\n\n[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/smakosh/gatsby-portfolio-dev)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/57c04515-1d1b-46e8-b531-213fabca9cc4/deploy-status)](https://app.netlify.com/sites/gatsby-portfolio-dev/deploys)\n\n## Theme\n\n[Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)\n\n## Features\n\n- Eslint/Prettier configured\n- Scores 100% on a11y / Performance / PWA / SEO\n- PWA (desktop & mobile)\n- Easy to customize\n- Nice project structure\n- Amazing illustrations by [Undraw.co](https://undraw.co)\n- Tablet & mobile friendly\n- Continuous deployment with [Netlify](https://netlify.com)\n- A contact form protected by Google Recaptcha\n- Can be deployed with one click\n- Functional components with ~~Recompose~~ React Hooks! ~~ready to migrate to React hooks!~~\n- Fetches your Github pinned projects with most stars (You could customize this if you wish)\n\n## Design\n\nProject on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfolio-for-developers)\n\n## Structure\n\n```bash\n.\n├── data\n│   └── config              # SEO related tags\n├── src\n│   └── assets              # Assets\n│   │   │── icons             # icons\n│   │   │── illustrations     # illustrations from (undraw.co)\n│   │   └── thumbnail         # cover of your website when it's shared to social media\n│   ├── components          # Components\n│   │   │── common            # Common components\n│   │   │── landing           # Components used on the landing page\n│   │   └── theme             # Header & Footer\n│   └── pages               # Pages\n└── static                  # favicon & Netlify redirects\n```\n\n## Prerequisites\n\n[Yarn](https://yarnpkg.com/en/)\n\nPlease create a new file `.env.development` and put this env variable with your GitHub token\n\n> If you're building locally, you will have to create a new file `.env.production` and put the same env variable\n\n```bash\nGITHUB_TOKEN=xxxxxxxxxx\n```\n\n> [Get your GitHub access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token)\n\nDon't forget to edit your site's data on `data/config.js` file with your Google Recaptcha public key\n\nWhen deploying on Netlify, you will have to set the private key as well\n\n```bash\nSITE_RECAPTCHA_KEY=xxxxx\n\nSITE_RECAPTCHA_SECRET=xxxxx\n```\n\nI highly recommend you check this [repository](https://github.com/imorente/gatsby-netlify-form-example) for more details about the Google Recaptcha and Netlify forms\n\n## Installing\n\nInstalling the dependencies\n\n```bash\nyarn\n```\n\n## Start the dev server\n\n```bash\nyarn start\n```\n\n### Clean the cache\n\nThis removes the `.cache/` & `public/` folders\n\n```bash\nyarn reset\n```\n\n## Built with\n\n- Adobe XD\n- Gatsby\n- React & GraphQL\n- VSCode\n- And these useful of JavaScript libraries & Gatsby plugins [package.json](package.json)\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details\n\n## Contributors\n\n- [Ajay NS](https://github.com/ajayns) https://github.com/smakosh/gatsby-portfolio-dev/pull/3\n- [Ryan Lee](https://github.com/drdgvhbh) https://github.com/smakosh/gatsby-portfolio-dev/pull/6\n- [David](https://github.com/davidavz) https://github.com/smakosh/gatsby-portfolio-dev/pull/8\n- [Myself](https://smakosh.com)\n\n## Support\n\nIf you love this Gatsby template and want to support me, you can do so through my Patreon\n\n[![Support me on Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/smakosh)\n"
+  },
+  "thakkaryash94-gatsby-github-personal-website-master": {
+    "file": "gatsby-github-personal-website.md",
+    "repoUrl": "https://github.com/thakkaryash94/gatsby-github-personal-website",
+    "repoName": "thakkaryash94/gatsby-github-personal-website",
+    "branch": "master",
+    "themeKey": "thakkaryash94-gatsby-github-personal-website-master",
+    "title": "Gatsby Github Personal Website",
+    "demo": "https://thakkaryash94.netlify.com/",
+    "author": "Yash Thakkar",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "No Cms"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "Personal website template for Gatsby with GitHub style design.",
+    "theme_key": "thakkaryash94-gatsby-github-personal-website-master",
+    "name": "gatsby-github-personal-website",
+    "github_username": "thakkaryash94",
+    "repo": "thakkaryash94/gatsby-github-personal-website",
+    "url": "https://github.com/thakkaryash94/gatsby-github-personal-website",
+    "stars": 14,
+    "forks": 7,
+    "open_issues": 0,
+    "last_commit": "2019-11-19T18:57:38Z",
+    "created_at": "2019-03-01T20:56:53Z",
+    "readmeContent": "# Get started building your personal website using GatsbyJS\n\n### Showcase your software development skills\n\nThis repository gives you the code you'll need to kickstart a personal website that showcases your work as a software developer. And when you manage the code in a GitHub repository, it will automatically render a webpage with the owner's profile information, including a photo, bio, and repositories.\n\nYour personal website is waiting to be personalized, though. It includes space to highlight your specific areas of interest in software development, like languages or industries. And it's standing by to publish your next great blog post.\n\nIt's all possible using the combination of [gatsbyjs](https://www.gatsbyjs.org/docs/) (for building your website), [GitHub Pages](https://pages.github.com/) (for hosting your website), and [GitHub's API](https://developer.github.com/v3/) (for automatically populating your website with content).\n\n## Installation\n\n### Fork this repo\n\nYou'll be making your own copy of the \"personal website starter\" repository so you have your own project to customize. A \"fork\" is a copy of a repository. So select \"Fork\" atop [the `thakkaryash94/gatsby-github-personal-website` repository](https://github.com/thakkaryash94/gatsby-github-personal-website).\n\nOnce you've found a home for your forked repository, it's yours. You're the owner, so you're ready to publish, if you wish.\n\n### GitHub Personal Access Token\n\nWe need GitHub personal access toke to fetch data and generate content for our website using graphql api. Create personal token for this app. Learn more [here](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).\n\n* permissions\n  - repo\n    - public_repo\n  - admin:org\n    - read:org\n  - user\n    - read:user\n    - user:email\n\n**Note: Do not mark any other permission as we don't require them, we are only granting read permission to our project. DO NOT COMMIT this token.**\n\n### Install in your local development environment\n\n1. Change into your new directory\n```\ncd personal-website\n```\n2. Install dependencies\n```\nnpm install\n```\n3. Build the site and make it available on a local server\n```\nGITHUB_TOKEN=YOUR_GITHUB_TOKEN npm run develop\n```\n6. Now browse to [http://localhost:8000](http://localhost:8000)\n\n### Publish\n\nWhen you host your personal website's code on GitHub, you get the support of free hosting through GitHub Pages.\n\nGitHub Pages support jekyll projects out of the box. Our project is in JavaScript, that's why we have to do follow certain steps to host our personal website.\n\nTo host our website on GitHub, we need to create a new branch name `gh-pages` and change GitHub Pages source to `gh-pages`. You can read out it in details [here](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages). Now follow below steps to publish your personal website.\n\n- We run below command to generate static build for our personal website. This command will create public folder with bunch of files-folders for our website.\n\n```\nPATH_PREFIX=/gatsby-github-personal-website GITHUB_TOKEN=YOUR_GITHUB_TOKEN gatsby build --prefix-paths\n```\n\nNow we have our static `public` folder, we have to push it `gh-pages` branch so that GitHub Pages can host those files and display it as our personal website. To do that, we have a handy `publish` script in `package.json`. Run below command to push your public folder to `gh-pages` branch. **Do not forget to build first before publish.**\n```\nnpm run publish\n```\n\n**If you want to use a custom domain**, you'll want to add it to your repository's \"Custom domain\" settings on github.com. And then register and/or [configure your domain with a DNS provider](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).\n\n## Customization\n\nIt's your website, and you control the source code. So you can customize everything, if you like. But we've provided a handful of quick customizations for you to consider as you get your website off the ground.\n\n### Quick configuration changes\n\nMost customizations can be done in a matter of seconds, by revising your repository's `gatsby-config.js` file.\n\n#### Layout\n\nBy default, your website will display in a two-column layout on larger-screen devices, with your photo, name, and basic information displayed in a left-aligned \"sidebar.\" But you can quickly switch to a \"stacked\" single-column layout by changing the line in your `gatsby-config.js` file that reads `layout: sidebar` to `layout: stacked`.\n\n#### Style\n\nBy default, your website appears with a \"light\" white and gray background, with dark text. But you can quickly switch to a \"dark\" background with white text by changing the line in your `gatsby-config.js` file that reads `style: light` to `style: dark`.\n\n#### Topics\n\nYour website comes pre-configured with three topics (e.g. \"Web design\" and \"Sass\") that appear in a section titled \"My Interests.\" These are also stored in your repository's `gatsby-config.js` file, where you can define each topic's name and two other optional details:\n\n- `web_url`: The web address you'd like to your topic to link to (e.g. `https://github.com/topics/sass`).\n- `image_url`: The web address of an (ideally square) image that you'd like to appear with your topic.\n\n## Adding pages\n\nTo **add a page** to your website (e.g. detailed resume):\n\n1. Create a new `.js` file under pages folder.\n2. Give it a filename that you want to be used in the page's URL (e.g. `http://yoursite.dev/filename`).\n\n## Adding blog posts\n\nTo **add a blog post** to your website:\n\n1. Create a new `.md` file in your repository's `/data/posts/` directory.\n2. Give it a filename using the following format:\n\n```\nYEAR-MONTH-DAY-title.md\n```\n\n3. At the start of your file, include the following [front matter](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/):\n\n```\n---\ntitle: \"The title of my blog post\"\n---\n```\n\nYour website comes with a placeholder blog post that you can reference. Notably, its [front matter](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/) declares `published` as `false`, so that it won't appear on your website.\n\n## Content and templates\n\nTo give you a sound foundation to start your personal website, your repository imports a handful of components that are re-used throughout your website. They're all stored in the `/components/` directory.\n\nThere are the usual suspects, like `layout.js` and `seo.js`. But there are few more worth pointing out:\n\n- `interests.js`: A heading and dynamic list of \"My Interests,\" which is populated with the [topics](#topics) you list in your `/data/topcis.yaml`.\n- `masthead.js`: A collection of your avatar, name, bio, and other metadata that's displayed prominently on all your webpages to help identify what the website is about.\n- `postCard.js`: A compact, summarized presentation of a blog post, re-used to display a listing of your latest blog posts.\n- `projects.js`: A heading and dynamic list of \"My Projects,\" which is populated with a listing of your newest GitHub repositories.\n- `repoCard.js`: A compact, summarized presentation of a repository, re-used to display a listing of your GitHub repositories.\n- `thoughts.js`: A heading and dynamic list of \"My Thoughts,\" which is populated with a listing of your latest blog posts.\n- `topicCard.js`: A compact, summarized presentation of a topic (defined in your `/data/topics.yaml`), re-used to display a listing of your interests.\n\n### Layouts\n\nYour repository comes with three layouts:\n\n- **default**: Not used by any of the built-in pages or posts, but useful for any new pages you create.\n- **home**: Used by your `/pages/index.js` homepage to display listings of your projects, interests, and (optionally) your blog posts.\n- **post**: Used by default by the posts in your `/data/posts/` directory.\n\n## Styles\n\nYour website is pre-configured to use [GitHub's very flexible CSS framework called \"Primer,\"](https://styleguide.github.com/primer/). It's currently referenced within your `layout.scss` file, using the CSS import at-rule:\n\n```\n@import url('https://unpkg.com/primer/build/build.css');\n```\n\nYou are, of course, welcome to remove it or replace it with another framework. Just bear in mind that the HTML that your website came pre-packaged with references multiple Primer \"utility classes\" to define things like column widths, margins, and background colors.\n\nYou also have the option to add on to and extend Primer's styles by adding custom CSS to your `/assets/styles.scss` Sass stylesheet. By editing this file, you can customize your website's color scheme, typography, and more.\n\n## Original Repository\nThis project is conversion to JS from original repository. I tried to follow the same file-folder structure as original repository.\n\nhttps://github.com/github/personal-website\n\n\n## License\n\nThe theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).\n\n"
+  },
+  "thriveweb-yellowcake-master": {
+    "file": "gatsby-yellowcake.md",
+    "repoUrl": "https://github.com/thriveweb/yellowcake",
+    "repoName": "thriveweb/yellowcake",
+    "branch": "master",
+    "themeKey": "thriveweb-yellowcake-master",
+    "title": "Gatsby Yellowcake",
+    "demo": "https://yellowcake.netlify.com/",
+    "author": "THRIVE",
+    "ssg": [
+      "Gatsby"
+    ],
+    "cms": [
+      "NetlifyCMS"
+    ],
+    "gatsby": {
+      "version": 2,
+      "type": "starter"
+    },
+    "license": "MIT",
+    "description": "A template for creating lightning-fast websites with Gatsby and Netlify-CMS + Uploadcare intergration.",
+    "theme_key": "thriveweb-yellowcake-master",
+    "name": "yellowcake",
+    "github_username": "thriveweb",
+    "repo": "thriveweb/yellowcake",
+    "url": "https://github.com/thriveweb/yellowcake",
+    "stars": 112,
+    "forks": 49,
+    "open_issues": 4,
+    "last_commit": "2020-01-12T02:21:19Z",
+    "created_at": "2018-10-15T04:47:58Z",
+    "readmeContent": "# Yellowcake\n\n[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n[![dependencies](https://david-dm.org/jinksi/netlify-cms-react-starter.svg?style=flat-square)](https://david-dm.org/jinksi/gatsbro)\n\nAn opinionated starter project for creating lightning-fast websites with [Gatsby](https://gatsbyjs.org) v2 and [Netlify CMS](https://netlifycms.org) v2.\n\n- **[Gatsby](https://gatsbyjs.org)** static site generator\n- **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management\n\n## See also\n\n[Netlify CMS Docs](https://www.netlifycms.org/docs/)  \n[Netlify CMS Repo](https://github.com/netlify/netlify-cms)\n\n## Get going\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)\n\n1.  Hit the **Deploy to Netlify** button. This will:\n\n- Clone the repo into your Github account\n- Create you a new project on Netlify, build & deploy\n\n1.  Once your Netlify project has been created, check a couple of settings:\n\n- Enable **Identity**\n- Change **Registration Preferences** to **Invite Only**\n- Enable **Git Gateway**\n\n1.  Invite users (probably yourself) to enable admin access\n\n- Open the **Identity** tab and hit **Invite Users**\n\n## Show me the CMS!\n\nThe CMS lives at [\\_\\_YOUR_SITE_NAME\\_\\_.netlify.com/admin](https://__YOUR_SITE_NAME__.netlify.com/admin).\n\n## Developing\n\n1.  Clone your repo to your local machine\n\n1.  Install dependencies\n\n`yarn` or `npm install`\n\n1.  Run the development server\n\n`yarn start` or `npm run start`\n\nIf you are adding or editing content locally in the CMS, a couple of things to note:\n\n1.  Changes will be pushed to the remote repo.\n\n1.  You will be prompted to enter your site's url, this is necessary for Netlify Identity to manage user login. This is stored in `localStorage`, so you might have to empty your browser cache if you are switching projects but remaining on `localhost:8000`.\n\n## Editing CMS fields\n\nThe Netlify CMS configuration is located in `public/admin/config.yml`. This is where you will configure the pages, fields, posts and settings that are editable by the CMS.\n\nFind out more in the [Netlify CMS Docs](https://www.netlifycms.org/docs/#configuration).\n\n## Uploadcare setup\n\nUploadcare is our file upload system. It hosts the files for us and delivers them trough their CDN network.\nEach site you'll create need its own Uploadcare API key's. See below how to set this up\n\n1. Create new project in Uploadcare and save API keys in project\n\n- Go to [Uploadcare.com](https://uploadcare.com/accounts/login/) and login\n- Once on the dashboard create a new project\n- Set the name and hit create\n- In the left menu click in API Keys and copy the public key\n- Now open your project and open the CMS congif.yml file\n- find the `media_library` settings and paste in the public key after `publicKey:`\n- Done!!\n\nFor more details see the [Netlify CMS Docs](https://www.netlifycms.org/docs/uploadcare/)\n\n## Scheduled content\n\nScheduled content allows you to schedule posts. Set the date / order field in a post to the feature.\nFor the scheduled content to appear on the website we need to deploy our website daily.\n\n1. Setup a Netlify build hook\n\n- Go to https://app.netlify.com/sites/_YOUR_SITE_NAME/setings/deploys/#build-hooks\n- Hit build hook button in the build hooks section\n- Give it a name for example: \"Automatic deploy Zapier\"\n- Select branch, in most cases master will do.\n- Hit save and copy the generated url\n\n2. Zapier Setup\n\n- Go to [Zapier.com](https://zapier.com/) and login\n- Hit make a zap button in the right top corner\n- Search for Schedule in the search bar and select \"Schedule by Zapier\"\n- Check every day and hit continue\n- Select a time and make sure trigger on weekends is turned on\n- Double check your settings and hit continue\n- On the left hit add a step - and search for webhook by Zapier\n- Select post as action and continue\n- Past in the url of our recently generated webhook in the url field\n- Make sure \"Payload Type\" is set to form and hit continue\n- check settings and hit the test button\n- Check your Netlify site if there has been triggered a new deploy\n- If that worked hit finish\n- Give your zap a name, example: \"Automatic deploy Yellowcake\" and make sure your zap is turned on\n\nThat's it, you'r now ready to use scheduled content!!\n\n## Mailchimp integration\n\nhttps://hooks.zapier.com/hooks/catch/2881617/ea5exg/\n\n- Go to [Zapier.com](https://zapier.com/) and login\n- Hit make a zap button in the right top corner\n- Search for webhook by Zapier and select catch hook and continue to next step\n- In most cases leave this field empty and continue\n- Copy the generated url\n- Now go to the [form settings](https://app.netlify.com/sites/yellowcake/settings/forms#outgoing-notifications) in you Netlify project\n- Find the form notifications section click the add notification button\n- Select the option `outgoing webhook`\n- Set the event to listen for\n- Paste in our recent generated url in the URL to notify field\n- Select your form and save settings\n- Open your website navigate to your form, fill it out and send the data\n- Go back to Zaper and see if your form data has come trough.\n- Hit continue and add a new step on the left side of the screen\n- Search for MailChimp and select add/update subscriber\n- Select MailChimp account or add one and hit the test button\n- if succeeded hit continue button\n- Select your MailChimp list and select the subscriber email address\n- Fill in other settings for your needs and continue\n- Hit send test to MailChimp button and hit finish if succeeded\n- Give your Zap a name and make sure your zap is turned on\n- Submit your form one last time and see if all data is coming trough to MailChimp\n- Thats is!\n\n## Instagram Feed\n\nGet Your Instagram Access Token [here](https://generator.thrivex.io/). In order to display your Instagram photos on your own website, you are required to provide an Instagram Access Token. You can do this by clicking the generator button on this site you will first need to login to your account.\n"
+  }
+}
