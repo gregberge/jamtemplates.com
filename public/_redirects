@@ -1,0 +1,7 @@
+https://jamtemplates.netlify.com/*    https://jamtemplates.com/:splat 301!
+http://jamtemplates.netlify.com/*     https://jamtemplates.com/:splat 301!
+
+/wp-login                         https://www.youtube.com/watch?v=CkvUAl7Y4mw
+/wp-login.php                     https://www.youtube.com/watch?v=CkvUAl7Y4mw
+/wp-admin                         https://www.youtube.com/watch?v=CkvUAl7Y4mw
+/wp-admin.php                     https://www.youtube.com/watch?v=CkvUAl7Y4mw

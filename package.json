@@ -6,6 +6,8 @@
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
     "generate-themes": "node ./scripts/generate-themes.js",
     "build": "yarn capture-screenshots && yarn generate-themes --latest && next build",
+    "export": "next export",
+    "deploy": "yarn build && yarn export",
     "start": "next start",
     "generate-icons": "svgr assets/svg -d components"
   },
