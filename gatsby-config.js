@@ -73,7 +73,7 @@ module.exports = {
         short_name: `JamTemplates`,
         description,
         background_color: `#16171B`,
-        theme_color: `#5A81FF`,
+        theme_color: `#8aa5ff`,
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

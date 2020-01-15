@@ -25,14 +25,6 @@ const Author = styled.p`
 const Image = styled(Img)`
   margin: 3 0;
   width: 100%;
-  height: 200;
-
-  ${up(
-    'md',
-    css`
-      height: 400;
-    `,
-  )}
 `
 
 const SettingsList = styled.ul`
