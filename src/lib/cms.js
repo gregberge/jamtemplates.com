@@ -10,7 +10,7 @@ export function getCMSInfos(name) {
       return {
         logo: noCMSLogo,
         title: 'No CMS required',
-        features: ['This template use only local files'],
+        features: ['This template uses only local files'],
       }
     case 'Wordpress':
       return {
