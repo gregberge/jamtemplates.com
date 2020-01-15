@@ -4,7 +4,7 @@ import { transparentize } from 'polished'
 
 const theme = {
   colors: {
-    primary: '#5A81FF',
+    primary: '#8aa5ff',
     accent: '#FFCA81',
     success: '#54C76D',
     light100: '#16171B',
