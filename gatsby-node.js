@@ -1,9 +1,10 @@
 const slugify = require('slugify')
+const { createFilePath } = require('gatsby-source-filesystem')
 
-exports.onCreateNode = ({ node, actions }) => {
+exports.onCreateNode = ({ getNode, node, actions }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `Template`) {
+  if (node.internal.type === 'Template') {
     createNodeField({
       name: 'screenshot',
       node,
@@ -14,6 +15,14 @@ exports.onCreateNode = ({ node, actions }) => {
       name: 'slug',
       node,
       value: `/templates/${slugify(node.title).toLowerCase()}`,
+    })
+  }
+
+  if (node.internal.type === 'Mdx') {
+    createNodeField({
+      name: 'slug',
+      node,
+      value: createFilePath({ node, getNode }),
     })
   }
 }
@@ -33,18 +42,35 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+        allMdx {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+            }
+          }
+        }
       }
     `,
   )
 
-  // Create blog posts pages.
+  // Create static pages
+  result.data.allMdx.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: require.resolve('./src/templates/mdx.js'),
+      context: {},
+    })
+  })
+
+  // Create template pages
   result.data.allTemplate.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: require.resolve('./src/templates/template.js'),
-      context: {
-        id: node.id,
-      },
+      context: {},
     })
   })
 }

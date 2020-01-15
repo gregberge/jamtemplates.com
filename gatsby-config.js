@@ -61,6 +61,29 @@ module.exports = {
         path: `${__dirname}/generated/templates`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md', '.markdown'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              disableBgImageOnAlpha: true,
+            },
+          },
+          { resolve: 'gatsby-remark-embedder' },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdxPages`,
+        path: `${__dirname}/src/mdxPages`,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

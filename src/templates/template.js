@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { Box, up, css } from '@xstyled/styled-components'
+import styled, { Box } from '@xstyled/styled-components'
 import { FiStar } from 'react-icons/fi'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -201,8 +201,8 @@ export default function TemplateDetail({ data: { template } }) {
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
-    template(id: { eq: $id }) {
+  query($path: String!) {
+    template(fields: { slug: { eq: $path } }) {
       id
       title
       author

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { VisuallyHidden } from 'reakit/VisuallyHidden'
 import {
   Navbar,
   NavbarBrand,
@@ -15,9 +16,13 @@ export function AppNavbar() {
       <NavbarBrandLink as={Link} to="/">
         <NavbarBrand>
           <BrandLogo />
+          <VisuallyHidden>JamTemplates</VisuallyHidden>
         </NavbarBrand>
       </NavbarBrandLink>
       <NavbarSecondary>
+        <NavbarLink as={Link} to="/about">
+          About
+        </NavbarLink>
         <NavbarLink href="https://github.com/gregberge/jamtemplates.com#submit-a-theme">
           Submit theme
         </NavbarLink>
