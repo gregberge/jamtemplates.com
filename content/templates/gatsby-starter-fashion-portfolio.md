@@ -6,7 +6,7 @@ author: Shobhit Chittora
 ssg:
   - Gatsby
 cms:
-  - No CMS
+  - Markdown
 gatsby:
   version: 2
   type: starter

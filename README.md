@@ -35,7 +35,7 @@ gatsby:
   type: theme # "theme" or "starter"
 # Supported CMS
 cms:
-  - No CMS # If you only use local files (Markdown or JS)
+  - Markdown
   - NetlifyCMS
   - Contentful
   - DatoCMS

@@ -35,7 +35,7 @@ const SettingsList = styled.ul`
 
   li {
     &:before {
-      content: '✔';
+      content: '✓';
       margin-right: 1;
     }
   }

@@ -6,6 +6,7 @@ author: Narative
 ssg:
   - Gatsby
 cms:
+  - Markdown
   - Contentful
 gatsby:
   version: 2

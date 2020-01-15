@@ -64,6 +64,7 @@ export default function IndexPage({ data }) {
                           height={24}
                           src={infos.logo}
                           alt={name}
+                          title={name}
                         />
                       )
                     })}
@@ -78,6 +79,7 @@ export default function IndexPage({ data }) {
                           height={24}
                           src={infos.logo}
                           alt={name}
+                          title={name}
                         />
                       )
                     })}
