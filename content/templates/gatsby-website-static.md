@@ -6,12 +6,11 @@ author: HiStaff
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2019-06-04T16:34:12Z
-github_branch: master
+date: 2019-06-04
 description: 'Business ready landing page template for Gatsby.'
 ---

@@ -6,12 +6,11 @@ author: Gatsby Central
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2018-03-30T12:45:33Z
-github_branch: master
+date: 2018-03-30
 description: 'A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs.'
 ---

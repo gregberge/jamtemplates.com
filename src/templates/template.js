@@ -6,10 +6,11 @@ import Img from 'gatsby-image'
 import { Card, CardBody, CardTitle } from '../components/Card'
 import { Container } from '../components/Container'
 import { Seo } from '../components/Seo'
-import { SSGLogo } from '../components/SSGLogo'
 import { Button } from '../components/Button'
 import { Readme } from '../components/Readme'
 import { trackLink } from '../components/Analytics'
+import { getSSGInfos } from '../lib/ssg'
+import { getCMSInfos } from '../lib/cms'
 
 const Title = styled.h1`
   color: lighter;
@@ -93,6 +94,7 @@ export default function TemplateDetail({ data: { template } }) {
             fluid={template.fields.screenshot.childImageSharp.fluid}
             alt={template.title}
           />
+          <Readme template={template} />
         </Box>
         <Box col={{ xs: 1, md: 1 / 3 }} p={3}>
           <Box row m={-2}>
@@ -151,26 +153,55 @@ export default function TemplateDetail({ data: { template } }) {
                 </a>
               </Card>
             </Box>
-            {template.gatsby && (
-              <Box col={1} p={2}>
-                <Card>
-                  <CardBody>
-                    <Box textAlign="center" mb={2}>
-                      <SSGLogo name="Gatsby" width={72} />
-                    </Box>
-                    <CardTitle>Features</CardTitle>
-                    <SettingsList>
-                      <li>Compatible with Gatsby v{template.gatsby.version}</li>
-                      <li>Gatsby {template.gatsby.type}</li>
-                    </SettingsList>
-                  </CardBody>
-                </Card>
-              </Box>
-            )}
+            {template.ssg.map((name, index) => {
+              const infos = getSSGInfos(name, template)
+              if (!infos) return null
+              return (
+                <Box key={index} col={1} p={2}>
+                  <Card>
+                    <CardBody>
+                      <Box textAlign="center" mb={2}>
+                        <a href={infos.website} rel="noopener noreferrer">
+                          <img src={infos.logo} alt={name} width={72} />
+                        </a>
+                      </Box>
+                      <CardTitle textAlign="center">{name} template</CardTitle>
+                      <SettingsList>
+                        {infos.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
+                      </SettingsList>
+                    </CardBody>
+                  </Card>
+                </Box>
+              )
+            })}
+            {template.cms.map((name, index) => {
+              const infos = getCMSInfos(name, template)
+              if (!infos) return null
+              return (
+                <Box key={index} col={1} p={2}>
+                  <Card>
+                    <CardBody>
+                      <Box textAlign="center" mb={2}>
+                        <a href={infos.website} rel="noopener noreferrer">
+                          <img src={infos.logo} alt={name} width={72} />
+                        </a>
+                      </Box>
+                      <CardTitle textAlign="center">{infos.title}</CardTitle>
+                      {infos.features && infos.features.length > 0 && (
+                        <SettingsList>
+                          {infos.features.map((feature, index) => (
+                            <li key={index}>{feature}</li>
+                          ))}
+                        </SettingsList>
+                      )}
+                    </CardBody>
+                  </Card>
+                </Box>
+              )
+            })}
           </Box>
-        </Box>
-        <Box col={{ xs: 1, md: 2 / 3 }} p={3}>
-          <Readme template={template} />
         </Box>
       </Box>
     </Container>
@@ -188,6 +219,8 @@ export const pageQuery = graphql`
       demoUrl
       repoUrl
       license
+      ssg
+      cms
       gatsby {
         version
         type

@@ -6,12 +6,11 @@ author: LekoArts
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2017-11-30T18:53:29Z
-github_branch: master
+date: 2017-11-30
 description: 'Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.'
 ---

@@ -6,12 +6,11 @@ author: Lennart
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2017-10-18T19:20:05Z
-github_branch: master
+date: 2017-10-18
 description: 'Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images. Especially designers and/or photographers will love this theme! Built with MDX and Theme UI.'
 ---

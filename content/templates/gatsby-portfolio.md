@@ -11,7 +11,6 @@ gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2017-12-01T17:08:02Z
-github_branch: master
+date: 2017-12-01
 description: 'Clean and simple portoflio template built compatible with Gatsby and Dato CMS.'
 ---

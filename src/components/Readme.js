@@ -51,6 +51,9 @@ export function Readme({ template }) {
     if (!uri.startsWith('/') && !uri.startsWith('http')) {
       return `https://raw.githubusercontent.com/${template.github.owner}/${template.github.repo}/${template.github.branch}/${uri}`
     }
+    if (uri.startsWith('http://')) {
+      return uri.replace('http://', 'https://')
+    }
     return uri
   }
   return (

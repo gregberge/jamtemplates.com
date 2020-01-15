@@ -6,14 +6,11 @@ author: Code Bushi
 ssg:
   - Gatsby
 cms:
-  - No Cms
-
+  - No CMS
 gatsby:
   version: 2
   type: starter
-
 license: CC BY 3.0
-date: 2017-12-02T23:10:35Z
-github_branch: master
+date: 2017-12-02
 description: 'Gatsby full page landing page template with beautiful pastel colors.'
 ---

@@ -6,12 +6,11 @@ author: Code Bushi
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: CC BY 3.0
-date: 2018-01-09T23:53:31Z
-github_branch: master
+date: 2018-01-09
 description: 'Single page portfolio template for photographers.'
 ---

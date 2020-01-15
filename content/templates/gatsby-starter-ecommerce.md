@@ -6,12 +6,11 @@ author: Parminder Sanghera
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2018-06-08T07:15:32Z
-github_branch: master
+date: 2018-06-08
 description: 'Gatsby template for creating an eCommerce site using the Moltin eCommerce API.'
 ---

@@ -6,12 +6,11 @@ author: Yash Thakkar
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2019-03-01T20:56:53Z
-github_branch: master
+date: 2019-03-01
 description: 'Personal website template for Gatsby with GitHub style design.'
 ---

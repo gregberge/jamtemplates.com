@@ -6,12 +6,11 @@ author: Shobhit Chittora
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2019-07-19T17:57:04Z
-github_branch: master
+date: 2019-07-19
 description: 'A Gatsby template for a professional and minimal fashion portfolio.'
 ---

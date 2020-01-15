@@ -6,12 +6,11 @@ author: Kyle Gill
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2019-03-19T18:05:37Z
-github_branch: master
+date: 2019-03-19
 description: 'A simple, minimal Gatsby template for quick and easy landing pages.'
 ---

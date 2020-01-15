@@ -11,7 +11,6 @@ gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2018-02-03T21:55:52Z
-github_branch: master
+date: 2018-02-03
 description: 'A Gatsby template that leverages the WordPress API, ACF and more.'
 ---

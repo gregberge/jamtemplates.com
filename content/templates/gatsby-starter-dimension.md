@@ -6,12 +6,10 @@ author: Code Bushi
 ssg:
   - Gatsby
 cms:
-  - No Cms
-
+  - No CMS
 gatsby:
   version: 2
   type: starter
-
 license: CC BY 3.0
 date: 2017-11-25T18:56:41Z
 github_branch: master

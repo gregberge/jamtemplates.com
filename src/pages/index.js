@@ -8,6 +8,8 @@ import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
 import { Button } from '../components/Button'
 import { trackLink } from '../components/Analytics'
+import { getSSGInfos } from '../lib/ssg'
+import { getCMSInfos } from '../lib/cms'
 
 export default function IndexPage({ data }) {
   return (
@@ -49,6 +51,36 @@ export default function IndexPage({ data }) {
                       <FiStar style={{ fontSize: '0.8em' }} />{' '}
                       {template.starsCount}
                     </Box>
+                  </Box>
+                  <Box row mx={-1} my={2}>
+                    {template.ssg.map(name => {
+                      const infos = getSSGInfos(name, template)
+                      if (!infos) return null
+                      return (
+                        <Box
+                          col="auto"
+                          px={1}
+                          forwardedAs="img"
+                          height={24}
+                          src={infos.logo}
+                          alt={name}
+                        />
+                      )
+                    })}
+                    {template.cms.map(name => {
+                      const infos = getCMSInfos(name, template)
+                      if (!infos) return null
+                      return (
+                        <Box
+                          col="auto"
+                          px={1}
+                          forwardedAs="img"
+                          height={24}
+                          src={infos.logo}
+                          alt={name}
+                        />
+                      )
+                    })}
                   </Box>
 
                   <Box row mt={3}>
@@ -112,6 +144,12 @@ export const pageQuery = graphql`
           starsCount
           demoUrl
           repoUrl
+          ssg
+          cms
+          gatsby {
+            version
+            type
+          }
           fields {
             slug
             screenshot {

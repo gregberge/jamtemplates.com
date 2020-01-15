@@ -7,36 +7,51 @@ A curated list of beautiful & ready-to-use themes for Gatsby.
 Anyone can submit a theme to the gallery.
 
 - Fork this repo and create a new markdown `.md` file in `content/theme` folder.
-- The markdown filename is typically named after your theme or repo, for example `hugo-air.md`
+- The markdown filename is typically named after your theme or repo, for example `gatsby-blue.md`
 - Submit a pull-request with the title **Theme Submission: theme-name**
 
 The markdown file should contain the following front-matter.
 
 ```yaml
 ---
+# The title of your theme
 title: 'My Theme Name'
+# Description of your theme
+description: This theme is a lightweight Gridsome starter kit which is perfect for a blog or a portfolio.
+# The GitHub repository of your theme
 github: https://github.com/username/repo
+# The online demo of your theme
 demo: https://www.demo.com
+# Your name
 author: Github Author
-date: 2019-08-20 # This is the date you submitted the theme YYYY-MM-DD
-github_branch: master # This is the repos default branch
+# This is the date you submitted the theme YYYY-MM-DD
+date: 2019-08-20
+# SSG engine of your theme (currently only Gatsby is supported)
 ssg:
   - Gatsby
+# Specific informations relative to Gatsby
+gatsby:
+  version: 2 # Version of Gatsby
+  type: theme # "theme" or "starter"
+# Supported CMS
 cms:
+  - No CMS # If you only use local files (Markdown or JS)
   - NetlifyCMS
+  - Contentful
+  - DatoCMS
+  - Wordpress
+# The GitHub branch pointing to your theme (facultative)
+# If not specified, we will use "master"
+github_branch: master
+# The CSS engine used on your theme
 css:
   - Theme UI
+# What is your theme used for?
 archetype:
   - Blog
   - Portfolio
-services:
-  - Snipcart
-  - Formstack
-gatsby:
-  version: 2
-  type: theme
+# License of your theme
 license: MIT
-description: This theme is a lightweight Gridsome starter kit which is perfect for a blog or a portfolio.
 ---
 
 ```

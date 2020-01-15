@@ -36,7 +36,7 @@ export const CardBody = styled.div`
   padding: 3;
 `
 
-export const CardTitle = styled.h3`
+export const CardTitle = styled.h3Box`
   font-size: 18;
   margin: 0;
   color: lighter;

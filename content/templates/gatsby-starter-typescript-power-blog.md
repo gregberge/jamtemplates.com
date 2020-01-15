@@ -6,12 +6,11 @@ author: Majid Hajian
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2018-10-19T12:42:53Z
-github_branch: master
+date: 2018-10-19
 description: 'Minimal Personal Blog with Gatsby and Typescript'
 ---

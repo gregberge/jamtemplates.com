@@ -6,12 +6,11 @@ author: Lennart
 ssg:
   - Gatsby
 cms:
-  - No Cms
+  - No CMS
 gatsby:
   version: 2
   type: starter
 license: MIT
-date: 2019-02-19T15:17:30Z
-github_branch: master
+date: 2019-02-19
 description: 'Image-heavy photography portfolio with colorful accents & great typography'
 ---
