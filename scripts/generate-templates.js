@@ -39,7 +39,7 @@ async function capture(template) {
     delay: 2,
     format: 'jpg',
   })
-    .src(template.demo, ['1024x768'], {
+    .src(template.demoUrl, ['1024x768'], {
       crop: true,
       scale: 2,
       filename: 'screenshot',
