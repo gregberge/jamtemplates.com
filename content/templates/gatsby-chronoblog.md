@@ -1,5 +1,5 @@
 ---
-title: 'Gatsby Chronoblog'
+title: Gatsby Chronoblog
 description: Chronoblog is a Gatsbyjs theme specifically designed to create a personal website.  The main idea of ​​Chronoblog is to allow you not only to write a personal blog but also to keep a record of everything important that you have done.
 github: https://github.com/Chronoblog/gatsby-theme-chronoblog
 demo: https://chronoblog.now.sh
