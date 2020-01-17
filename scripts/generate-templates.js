@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/newline-after-import */
 const fs = require('fs')
+const path = require('path')
 const util = require('util')
 const glob = require('tiny-glob')
 const yamlFront = require('yaml-front-matter')
@@ -10,6 +11,7 @@ const outputFile = require('output-file')
 const Pageres = require('pageres')
 const splitInChunks = require('chunk')
 const pathExists = require('path-exists')
+const { argv } = require('yargs')
 
 const readFile = util.promisify(fs.readFile)
 
@@ -35,6 +37,9 @@ async function getGithubInfos({ owner, repo }) {
 }
 
 async function capture(template) {
+  const dest = `generated/templates/${template.id}`
+  const screenshotExist = await pathExists(dest)
+  if (screenshotExist) return null
   return new Pageres({
     delay: 2,
     format: 'jpg',
@@ -44,7 +49,7 @@ async function capture(template) {
       scale: 2,
       filename: 'screenshot',
     })
-    .dest(`generated/templates/${template.id}`)
+    .dest(dest)
     .run()
 }
 
@@ -68,7 +73,8 @@ async function generateFromFile(file) {
   const manifest = `generated/templates/${id}/template.json`
 
   const manifestExists = await pathExists(manifest)
-  if (manifestExists) {
+  const name = path.basename(file, '.md')
+  if (manifestExists && argv.name !== name && !argv.force) {
     console.log(id, '-- skipped')
     return
   }
