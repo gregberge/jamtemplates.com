@@ -145,6 +145,25 @@ export default function TemplateDetail({ data: { template } }) {
                 </a>
               </Card>
             </Box>
+            <Box col={1} p={2}>
+              <Card>
+                <CardBody textAlign="center">
+                  <CardTitle mb={3}>Deploy theme in one click</CardTitle>
+                  <a
+                    href={`https://app.netlify.com/start/deploy?repository=${template.repoUrl}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      alt="Deploy to netlify"
+                      src="https://www.netlify.com/img/deploy/button.svg"
+                      width={146}
+                      height={32}
+                    />
+                  </a>
+                </CardBody>
+              </Card>
+            </Box>
             {template.ssg.map((name, index) => {
               const infos = getSSGInfos(name, template)
               if (!infos) return null

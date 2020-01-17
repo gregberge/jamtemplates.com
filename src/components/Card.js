@@ -32,7 +32,7 @@ export const CardImg = styled.img`
   width: 100%;
 `
 
-export const CardBody = styled.div`
+export const CardBody = styled.box`
   padding: 3;
 `
 
