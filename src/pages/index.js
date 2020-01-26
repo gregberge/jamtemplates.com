@@ -26,7 +26,7 @@ export default function IndexPage({ data }) {
         </p>
       </Hero>
       <Container forwardedAs="section" my={5}>
-        <Box row m={-3} justifyContent="center">
+        <Box row m={-3}>
           {data.allTemplate.edges.map(({ node: template }) => (
             <Box key={template.id} col={{ xs: 1, md: 1 / 3 }} p={3}>
               <Card>
