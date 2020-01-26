@@ -38,7 +38,7 @@ async function getGithubInfos({ owner, repo }) {
 
 async function capture(template) {
   const dest = `generated/templates/${template.id}`
-  const screenshotExist = await pathExists(dest)
+  const screenshotExist = await pathExists(path.join(dest, 'screenshot.jpg'))
   if (screenshotExist) return null
   return new Pageres({
     delay: 2,
