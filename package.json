@@ -3,7 +3,7 @@
   "sideEffects": false,
   "scripts": {
     "generate-templates": "node ./scripts/generate-templates.js",
-    "build": "yarn generate-templates && gatsby build",
+    "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve": "gatsby serve",
