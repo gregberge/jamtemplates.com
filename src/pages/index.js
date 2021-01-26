@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { Box } from '@xstyled/styled-components'
+import { x } from '@xstyled/styled-components'
 import { FiStar } from 'react-icons/fi'
 import Img from 'gatsby-image'
 import { Card, CardImg, CardBody, CardTitle } from '../components/Card'
@@ -25,10 +25,10 @@ export default function IndexPage({ data }) {
           <a href="https://jamstack.org/">JamStack</a>.
         </p>
       </Hero>
-      <Container forwardedAs="section" my={5}>
-        <Box row m={-3}>
+      <Container as="section" my={5}>
+        <x.div row m={-3}>
           {data.allTemplate.edges.map(({ node: template }) => (
-            <Box key={template.id} col={{ xs: 1, md: 1 / 3 }} p={3}>
+            <x.div key={template.id} col={{ xs: 1, md: 1 / 3 }} p={3}>
               <Card>
                 <Link to={template.fields.slug}>
                   <CardImg
@@ -38,29 +38,29 @@ export default function IndexPage({ data }) {
                   />
                 </Link>
                 <CardBody>
-                  <Box row>
-                    <Box col>
+                  <x.div row>
+                    <x.div col>
                       <Link to={template.fields.slug}>
                         <CardTitle>{template.title}</CardTitle>
                       </Link>
-                      <Box forwardedAs="p" m={0} fontSize={14}>
+                      <x.p m={0} fontSize={14}>
                         by {template.author}
-                      </Box>
-                    </Box>
-                    <Box col="auto" color="lighter" fontSize={18}>
+                      </x.p>
+                    </x.div>
+                    <x.div col="auto" color="lighter" fontSize={18}>
                       <FiStar style={{ fontSize: '0.8em' }} />{' '}
                       {template.starsCount}
-                    </Box>
-                  </Box>
-                  <Box row mx={-1} my={2}>
-                    {template.ssg.map(name => {
+                    </x.div>
+                  </x.div>
+                  <x.div row mx={-1} my={2}>
+                    {template.ssg.map((name) => {
                       const infos = getSSGInfos(name, template)
                       if (!infos) return null
                       return (
-                        <Box
+                        <x.img
+                          key={name}
                           col="auto"
                           px={1}
-                          forwardedAs="img"
                           height={24}
                           src={infos.logo}
                           alt={name}
@@ -68,14 +68,14 @@ export default function IndexPage({ data }) {
                         />
                       )
                     })}
-                    {template.cms.map(name => {
+                    {template.cms.map((name) => {
                       const infos = getCMSInfos(name, template)
                       if (!infos) return null
                       return (
-                        <Box
+                        <x.img
+                          key={name}
                           col="auto"
                           px={1}
-                          forwardedAs="img"
                           height={24}
                           src={infos.logo}
                           alt={name}
@@ -83,17 +83,17 @@ export default function IndexPage({ data }) {
                         />
                       )
                     })}
-                  </Box>
+                  </x.div>
 
-                  <Box row mt={3}>
-                    <Box col fontSize={20} fontWeight={500} color="lighter">
+                  <x.div row mt={3}>
+                    <x.div col fontSize={20} fontWeight={500} color="lighter">
                       Free
-                    </Box>
-                    <Box col="auto">
-                      <Box row mx={-1}>
-                        <Box col="auto" px={1}>
+                    </x.div>
+                    <x.div col="auto">
+                      <x.div row mx={-1}>
+                        <x.div col="auto" px={1}>
                           <Button
-                            forwardedAs="a"
+                            as="a"
                             href={template.demoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -105,10 +105,10 @@ export default function IndexPage({ data }) {
                           >
                             Preview
                           </Button>
-                        </Box>
-                        <Box col="auto" px={1}>
+                        </x.div>
+                        <x.div col="auto" px={1}>
                           <Button
-                            forwardedAs="a"
+                            as="a"
                             variant="accent"
                             href={template.repoUrl}
                             target="_blank"
@@ -121,15 +121,15 @@ export default function IndexPage({ data }) {
                           >
                             Get
                           </Button>
-                        </Box>
-                      </Box>
-                    </Box>
-                  </Box>
+                        </x.div>
+                      </x.div>
+                    </x.div>
+                  </x.div>
                 </CardBody>
               </Card>
-            </Box>
+            </x.div>
           ))}
-        </Box>
+        </x.div>
       </Container>
     </>
   )

@@ -1,8 +1,14 @@
 import React from 'react'
-import { ThemeProvider, rpxTransformers, th } from '@xstyled/styled-components'
+import {
+  ThemeProvider,
+  rpxTransformers,
+  th,
+  defaultTheme,
+} from '@xstyled/styled-components'
 import { transparentize } from 'polished'
 
 const theme = {
+  ...defaultTheme,
   colors: {
     primary: '#8aa5ff',
     accent: '#FFCA81',
@@ -14,7 +20,7 @@ const theme = {
     'card-bg': '#292B33',
     text: '#959cb1',
     'readme-text': '#C6CFEB',
-    'navbar-bg': p => transparentize(0.7, th.color('darker')(p)),
+    'navbar-bg': (p) => transparentize(0.7, th.color('darker')(p)),
   },
   fonts: {
     'sans-serif':
@@ -24,7 +30,7 @@ const theme = {
     base: '.2s ease-in-out all',
   },
   shadows: {
-    soft: p => `0 ${th.px(2)(p)} ${th.px(6)(p)} 0 rgba(0, 0, 0, 0.1)`,
+    soft: (p) => `0 ${th.px(2)(p)} ${th.px(6)(p)} 0 rgba(0, 0, 0, 0.1)`,
   },
   space: [0, 4, 8, 16, 24, 48, 96, 144, 192, 240],
   radii: {

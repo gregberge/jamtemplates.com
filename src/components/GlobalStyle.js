@@ -1,9 +1,7 @@
-import { createGlobalStyle } from '@xstyled/styled-components'
-import { normalize } from 'polished'
+import * as React from 'react'
+import { createGlobalStyle, Preflight } from '@xstyled/styled-components'
 
-export const GlobalStyle = createGlobalStyle`
-  ${normalize()}
-
+const CustomGlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: sans-serif;
@@ -12,10 +10,6 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
-  * {
-    box-sizing: border-box;
   }
 
   button {
@@ -36,4 +30,18 @@ export const GlobalStyle = createGlobalStyle`
       color: accent;
     }
   }
+
+  svg {
+    display: inline-block;
+    vertical-align: initial;
+  }
 `
+
+export function GlobalStyle() {
+  return (
+    <>
+      <Preflight />
+      <CustomGlobalStyle />
+    </>
+  )
+}
