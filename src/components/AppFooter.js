@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react'
 import styled from '@xstyled/styled-components'
 import { FaGithub, FaTwitter } from 'react-icons/fa'

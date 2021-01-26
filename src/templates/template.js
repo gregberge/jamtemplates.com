@@ -102,7 +102,7 @@ export default function TemplateDetail({ data: { template } }) {
                     </Box>
                   </Box>
                   <Button
-                    forwardedAs="a"
+                    as="a"
                     href={template.demoUrl}
                     my={2}
                     target="_blank"
@@ -117,7 +117,7 @@ export default function TemplateDetail({ data: { template } }) {
                     Preview
                   </Button>
                   <Button
-                    forwardedAs="a"
+                    as="a"
                     href={template.repoUrl}
                     my={2}
                     variant="accent"
