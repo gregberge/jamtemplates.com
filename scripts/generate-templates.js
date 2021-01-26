@@ -119,7 +119,7 @@ async function generateAll() {
   }
 }
 
-generateAll().catch(error => {
+generateAll().catch((error) => {
   setTimeout(() => {
     throw error
   })
