@@ -1,5 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable import/newline-after-import */
+/* eslint-env node */
 const fs = require('fs')
 const path = require('path')
 const util = require('util')

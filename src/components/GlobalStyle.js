@@ -31,7 +31,7 @@ const CustomGlobalStyle = createGlobalStyle`
     }
   }
 
-  svg {
+  svg, img {
     display: inline-block;
     vertical-align: initial;
   }
