@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const slugify = require('slugify')
 const { createFilePath } = require('gatsby-source-filesystem')
 

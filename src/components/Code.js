@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from 'react'
 import styled, { css, up } from '@xstyled/styled-components'
 import Highlight, { defaultProps } from 'prism-react-renderer'

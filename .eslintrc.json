@@ -1,4 +1,18 @@
 {
   "root": true,
-  "extends": ["smooth", "smooth/project", "smooth/browser", "smooth/react"]
+  "env": { "browser": true, "es6": true },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/display-name": "off"
+  }
 }

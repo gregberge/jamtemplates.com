@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const defaultSiteUrl = 'https://jamtemplates.com'
 
 const {

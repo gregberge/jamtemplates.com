@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { Box } from '@xstyled/styled-components'
+import styled, { x } from '@xstyled/styled-components'
 import { FiStar } from 'react-icons/fi'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -77,8 +77,8 @@ export default function TemplateDetail({ data: { template } }) {
         description={template.description}
         image={template.fields.screenshot.childImageSharp.social.src}
       />
-      <Box row m={-3}>
-        <Box col={{ xs: 1, md: 2 / 3 }} p={3}>
+      <x.div row m={-3}>
+        <x.div col={{ xs: 1, md: 2 / 3 }} p={3}>
           <Title>{template.title}</Title>
           <Author>by {template.author}</Author>
           <Description>{template.description}</Description>
@@ -87,20 +87,20 @@ export default function TemplateDetail({ data: { template } }) {
             alt={template.title}
           />
           <Readme template={template} />
-        </Box>
-        <Box col={{ xs: 1, md: 1 / 3 }} p={3}>
-          <Box row m={-2}>
-            <Box col={1} p={2}>
+        </x.div>
+        <x.div col={{ xs: 1, md: 1 / 3 }} p={3}>
+          <x.div row m={-2}>
+            <x.div col={1} p={2}>
               <Card>
                 <CardBody>
-                  <Box row alignItems="center" m={-1}>
-                    <Box col p={1}>
+                  <x.div row alignItems="center" m={-1}>
+                    <x.div col p={1}>
                       <License>{template.license} License</License>
-                    </Box>
-                    <Box col="auto" p={1}>
+                    </x.div>
+                    <x.div col="auto" p={1}>
                       <Price>Free</Price>
-                    </Box>
-                  </Box>
+                    </x.div>
+                  </x.div>
                   <Button
                     as="a"
                     href={template.demoUrl}
@@ -130,8 +130,8 @@ export default function TemplateDetail({ data: { template } }) {
                   </Button>
                 </CardBody>
               </Card>
-            </Box>
-            <Box col={1} p={2}>
+            </x.div>
+            <x.div col={1} p={2}>
               <Card>
                 <a
                   href={template.repoUrl}
@@ -144,12 +144,12 @@ export default function TemplateDetail({ data: { template } }) {
                   </Counter>
                 </a>
               </Card>
-            </Box>
-            <Box col={1} p={2}>
+            </x.div>
+            <x.div col={1} p={2}>
               <Card>
                 <CardBody textAlign="center">
                   <CardTitle mb={3}>Deploy theme in one click</CardTitle>
-                  <a
+                  <x.a
                     href={`https://app.netlify.com/start/deploy?repository=${template.repoUrl}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -160,22 +160,22 @@ export default function TemplateDetail({ data: { template } }) {
                       width={146}
                       height={32}
                     />
-                  </a>
+                  </x.a>
                 </CardBody>
               </Card>
-            </Box>
+            </x.div>
             {template.ssg.map((name, index) => {
               const infos = getSSGInfos(name, template)
               if (!infos) return null
               return (
-                <Box key={index} col={1} p={2}>
+                <x.div key={index} col={1} p={2}>
                   <Card>
                     <CardBody>
-                      <Box textAlign="center" mb={2}>
+                      <x.div textAlign="center" mb={2}>
                         <a href={infos.website} rel="noopener noreferrer">
                           <img src={infos.logo} alt={name} width={72} />
                         </a>
-                      </Box>
+                      </x.div>
                       <CardTitle textAlign="center">{name} template</CardTitle>
                       <SettingsList>
                         {infos.features.map((feature, index) => (
@@ -184,21 +184,21 @@ export default function TemplateDetail({ data: { template } }) {
                       </SettingsList>
                     </CardBody>
                   </Card>
-                </Box>
+                </x.div>
               )
             })}
             {template.cms.map((name, index) => {
               const infos = getCMSInfos(name, template)
               if (!infos) return null
               return (
-                <Box key={index} col={1} p={2}>
+                <x.div key={index} col={1} p={2}>
                   <Card>
                     <CardBody>
-                      <Box textAlign="center" mb={2}>
+                      <x.div textAlign="center" mb={2}>
                         <a href={infos.website} rel="noopener noreferrer">
                           <img src={infos.logo} alt={name} width={72} />
                         </a>
-                      </Box>
+                      </x.div>
                       <CardTitle textAlign="center">{infos.title}</CardTitle>
                       {infos.features && infos.features.length > 0 && (
                         <SettingsList>
@@ -209,12 +209,12 @@ export default function TemplateDetail({ data: { template } }) {
                       )}
                     </CardBody>
                   </Card>
-                </Box>
+                </x.div>
               )
             })}
-          </Box>
-        </Box>
-      </Box>
+          </x.div>
+        </x.div>
+      </x.div>
     </Container>
   )
 }
