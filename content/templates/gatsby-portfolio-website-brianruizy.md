@@ -1,10 +1,10 @@
 ---
 # The title of your theme
-title: 'Portfolio Website Minimal'
+title: 'Gatsby Minimal Portfolio by brianruizy'
 # Description of your theme
 description: This theme is a mobile-first designed starter kit that works perfectly for a minimal portfolio website.
 # The GitHub repository of your theme
-github: https://github.com/brianruizy/portfolio-website
+github: https://github.com/BrianRuizy/gatsby-minimal-portfolio
 # The online demo of your theme
 demo: https://www.brianruizy.com
 # Your name
