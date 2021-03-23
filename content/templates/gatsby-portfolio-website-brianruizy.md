@@ -1,6 +1,6 @@
 ---
 # The title of your theme
-title: 'Portfolio Website Minimal Mobile-first'
+title: 'Portfolio Website Minimal'
 # Description of your theme
 description: This theme is a mobile-first designed starter kit that works perfectly for a minimal portfolio website.
 # The GitHub repository of your theme
