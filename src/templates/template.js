@@ -15,6 +15,8 @@ import { getCMSInfos } from '../lib/cms'
 const Title = styled.h1`
   color: lighter;
   margin: 0;
+  font-size: 40;
+  line-height: 1.1;
 `
 
 const Author = styled.p`
