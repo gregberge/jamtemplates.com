@@ -14,6 +14,8 @@ date: 2020-03-22
 # SSG engine of your theme (currently only Gatsby is supported)
 ssg:
   - Gatsby
+cms:
+  - Markdown
 # Specific informations relative to Gatsby
 gatsby:
   version: 2 # Version of Gatsby

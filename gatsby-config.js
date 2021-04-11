@@ -86,7 +86,12 @@ module.exports = {
         path: `${__dirname}/src/mdxPages`,
       },
     },
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        topLevelImportPaths: ['@xstyled/styled-components'],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
