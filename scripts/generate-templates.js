@@ -7,7 +7,6 @@ const yamlFront = require('yaml-front-matter')
 const { Octokit } = require('@octokit/rest')
 const gh = require('parse-github-url')
 const outputFile = require('output-file')
-const Pageres = require('pageres')
 const splitInChunks = require('chunk')
 const pathExists = require('path-exists')
 const { argv } = require('yargs')
@@ -39,16 +38,17 @@ async function capture(template) {
   const dest = `generated/templates/${template.id}`
   const screenshotExist = await pathExists(path.join(dest, 'screenshot.jpg'))
   if (screenshotExist) return null
+  const { default: Pageres } = await import('pageres')
   return new Pageres({
     delay: 2,
     format: 'jpg',
   })
-    .src(template.demoUrl, ['1024x768'], {
+    .source(template.demoUrl, ['1024x768'], {
       crop: true,
       scale: 2,
       filename: 'screenshot',
     })
-    .dest(dest)
+    .destination(dest)
     .run()
 }
 
