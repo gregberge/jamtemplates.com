@@ -63,7 +63,7 @@
     "eslint": "^7.18.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "pageres": "^6.1.0",
+    "pageres": "^7.1.0",
     "parse-github-url": "^1.0.2",
     "prettier": "^2.2.1",
     "responsive-loader": "^2.3.0",
