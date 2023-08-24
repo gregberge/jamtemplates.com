@@ -1,5 +1,5 @@
 ---
-title: Gatsby Clay 
+title: Gatsby Clay
 description: Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more.
 github: https://github.com/lilxyzz/clay-theme
 demo: https://clay.netlify.app
@@ -8,7 +8,7 @@ date: 2023-04-17
 ssg:
   - Gatsby
 gatsby:
-  version: 5+
+  version: 5
   type: theme
 cms:
   - Netlify/Decap CMS pre-configured
